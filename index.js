@@ -105,7 +105,8 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 30,
+        stagePadding: 0,
+        // margin: 200,
       },
       768: {
         items: 2,

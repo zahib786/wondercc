@@ -2411,8 +2411,8 @@ footer {
     color: rgba(51, 51, 51, 1);
     letter-spacing: 5%;
   }
-  .mbl-img-text-heading.heading-brake::after {
-    width: 55%;
+  .main-img-text .mbl-img-text-heading.heading-brake::after {
+    width: 100%;
   }
   .main-table-section .vahical-main-heading {
     padding: 0 20px;
@@ -2454,7 +2454,8 @@ footer {
     padding-bottom: 0;
   }
   .card-workflow {
-    width: 374px;
+    width: 348px;
+    margin: auto;
   }
   .grid-wrapper {
     grid-template-columns: repeat(1, 350px);
@@ -2530,5 +2531,14 @@ footer {
   }
   .full-img-card .img-text-heading-main span {
     font-size: 50px;
+  }
+  .note span {
+    font-size: 30px;
+  }
+  .card.parking .price {
+    font-size: 30px;
+  }
+  .card.visiting .plan-price {
+    font-size: 30px;
   }
 }
