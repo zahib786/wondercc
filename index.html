@@ -1,34 +1,69 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
+
+
+    <!-- jQuery (required) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    </head>
-    <body>
+</head>
+
+<body>
 
     <!-- ===============header====================== -->
-
     <header class="main-header">
-    <div class="container-header">
-    <div class="logo-div">
-    <img class="logo-img" src="pictures/Group 3 (1).png" alt="">
-    </div>
-    <nav class="main-menues">
-    <a href="">ホーム</a>
-    <a href="">車両紹介</a>
-    <a href="">料金プラン</a>
-    <a href="">利用ガイド</a>
-    <a href="">ブログ</a>
-    <a href="">予約・お問い合わせ</a>
-    </nav>
+        <div class="container-header">
+            <!-- Logo -->
+            <div class="logo-div">
+                <img class="logo-img" src="pictures/Group 30.png" alt="Wonder Camping Car Logo">
+            </div>
 
-    </div>
-    </header> 
+            <!-- Navigation Menu -->
+            <nav class="main-menues" id="mainMenu">
+                <a href="#home">ホーム</a>
+                <a href="#vehicles">車両紹介</a>
+                <a href="#pricing">料金プラン</a>
+                <a href="#guide">利用ガイド</a>
+                <a href="#blog">ブログ</a>
+                <a href="#contact">予約・お問い合わせ</a>
+            </nav>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="メニュー" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35" fill="none">
+                    <rect width="40" height="5" fill="#97CAD9" />
+                    <rect y="15" width="40" height="5" fill="#97CAD9" />
+                    <rect y="30" width="40" height="5" fill="#97CAD9" />
+                </svg>
+            </button>
+        </div>
+    </header>
 
     <!-- ===============header====================== -->
 
@@ -37,44 +72,119 @@
 
     <!-- ===============Hero Section====================== -->
     <div class="slider">
-    <div class="slide active" style="background-image: url('pictures/3e654ea838d71c0299b89c8cbbcc2dc8e753fa19\ \(1\).png');">
-    <div class="slide-content">DER CAMPING CAR</div>
+        <div class="slide active"
+            style="background-image: url('pictures/3e654ea838d71c0299b89c8cbbcc2dc8e753fa19\ \(1\).png');">
+            <div class="slide-content">DER CAMPING CAR</div>
+            <div class="slide-content slide-content-mbl">WONDER</div>
 
 
-    <div class="slide-bottom-image">
-    <div class="main-custom-van">
-    <img src="pictures/pngegg (28) 1 (1).png" alt="Van" class="">
-    <div class="main-new">
-    <p>ワンダーキャンピングカーの<br>
-    レンタルキャンピングカー</p>
-    <div class="van-btn-main">
-    <a href="">
-    <span>今すぐ予約する！</span>
-    <span class="hero-svg">
-    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-    <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9" stroke-width="2"/>
-    </svg>
-    </span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
+            <div class="slide-bottom-image">
+                <div class="main-custom-van">
+                    <img src="pictures/pngegg (28) 1 (1).png" alt="Van" class="">
+                    <div class="main-new">
+                        <p>ワンダーキャンピングカーの<br>
+                            レンタルキャンピングカー</p>
+                        <div class="van-btn-main">
+                            <a href="">
+                                <span>今すぐ予約する！</span>
+                                <span class="hero-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18"
+                                        fill="none">
+                                        <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9"
+                                            stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <div class="slide" style="background-image: url('pictures/6f0f976039d1873de0f66ff72c371d35413155ed\ \(1\).jpg');">
-    <div class="slide-content">DER CAMPING CAR</div>
-    </div>
-    <div class="slide" style="background-image: url('pictures/camping-with-family-happy-family-with-spending-time-outdoor-autumn-park\ 1\ \(1\).png');">
-    <div class="slide-content">DER CAMPING CAR</div>
-    <!-- <img src="https://i.ibb.co/2s1K0YH/van.png" alt="Van" class="slide-bottom-image"> -->
-    </div>
 
-    <div class="dots">
-    <div class="dot active" data-slide="0"></div>
-    <div class="dot" data-slide="1"></div>
-    <div class="dot" data-slide="2"></div>
-    </div>
+            <div class="mbl-bottom-img">
+                <div class="mbl-custom-lady ">
+                    <p class=""> ワンダーキャンピングカーの<br>レンタルキャンピングカー</p>
+                    <a href="">
+                        <span>今すぐ予約する！</span>
+                        <span class="hero-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18"
+                                fill="none">
+                                <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9"
+                                    stroke-width="2" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="slider-yuske"><img
+                        src="pictures/Kono_yuske_Dress_this_woman_in_a_suit._Dress_her_with_a_white_shirt_undernea_d5ece766-5969-4ecf-9358-f52cf987eeca 1.png"
+                        alt=""></div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="slide"
+            style="background-image: url('pictures/6f0f976039d1873de0f66ff72c371d35413155ed\ \(1\).jpg');">
+            <div class="slide-content">DER CAMPING CAR</div>
+            <div class="slide-content slide-content-mbl">WONDER</div>
+
+
+            <div class="mbl-bottom-img">
+                <div class="mbl-custom-lady ">
+                    <p class=""> ワンダーキャンピングカーの<br>レンタルキャンピングカー</p>
+                    <a href="">
+                        <span>今すぐ予約する！</span>
+                        <span class="hero-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18"
+                                fill="none">
+                                <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9"
+                                    stroke-width="2" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="slider-yuske"><img
+                        src="pictures/Kono_yuske_Dress_this_woman_in_a_suit._Dress_her_with_a_white_shirt_undernea_d5ece766-5969-4ecf-9358-f52cf987eeca 1.png"
+                        alt=""></div>
+            </div>
+        </div>
+        <div class="slide"
+            style="background-image: url('pictures/camping-with-family-happy-family-with-spending-time-outdoor-autumn-park\ 1\ \(1\).png');">
+            <div class="slide-content">DER CAMPING CAR</div>
+            <div class="slide-content slide-content-mbl">WONDER</div>
+            <!-- <img src="https://i.ibb.co/2s1K0YH/van.png" alt="Van" class="slide-bottom-image"> -->
+
+
+
+            <div class="mbl-bottom-img">
+                <div class="mbl-custom-lady ">
+                    <p class=""> ワンダーキャンピングカーの<br>レンタルキャンピングカー</p>
+                    <a href="">
+                        <span>今すぐ予約する！</span>
+                        <span class="hero-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18"
+                                fill="none">
+                                <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9"
+                                    stroke-width="2" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="slider-yuske"><img
+                        src="pictures/Kono_yuske_Dress_this_woman_in_a_suit._Dress_her_with_a_white_shirt_undernea_d5ece766-5969-4ecf-9358-f52cf987eeca 1.png"
+                        alt=""></div>
+            </div>
+        </div>
+
+        <div class="dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+        </div>
     </div>
     </div>
 
@@ -85,28 +195,37 @@
     <!-- ===============img gallery Section====================== -->
 
     <div class="main-gallery-section">
-    <div class="container">
-    <div class="first-gallery-main-div">
-    <img src="pictures/1.png" alt="" class="first-gallery-img" width="100%">
-    <div class="first-gallery-content">
-    <img src="pictures/Background.png" alt="" class="text-logo">
-    <h1 class="gallery-heading">大切な人と、ペットと<br>
-    キャンピングカーで過ごす特別な時間</h1>
-    <p class="gallery-description">「キャンピングカーで旅してみたい」そんな夢、ありませんか？
-    <br>でも購入前に、運転感覚や装備を確かめたいですよね。<br>
-    ワンダーキャンピングカーなら、<br>
-    1日17,000円〜で本格キャブコンをレンタル可能。<br>
-    ペットと一緒に、大切な人と大切な時間を過ごせます。<br>
-    千葉・東金から出発して、あなたらしい自由な旅を始めましょう！</p>
-    </div>
+        <div class="container">
+            <div class="first-gallery-main-div">
+                <img src="pictures/1.png" alt="" class="first-gallery-img" width="100%">
+                <div class="first-gallery-content">
+                    <img src="pictures/Background.png" alt="" class="text-logo">
+                    <h1 class="gallery-heading">大切な人と、ペットと<br>
+                        キャンピングカーで過ごす特別な時間</h1>
+                    <p class="gallery-description d-g-d">「キャンピングカーで旅してみたい」そんな夢、ありませんか？
+                        <br>でも購入前に、運転感覚や装備を確かめたいですよね。<br>
+                        ワンダーキャンピングカーなら、<br>
+                        1日17,000円〜で本格キャブコンをレンタル可能。<br>
+                        ペットと一緒に、大切な人と大切な時間を過ごせます。<br>
+                        千葉・東金から出発して、あなたらしい自由な旅を始めましょう！
+                    </p>
+
+                    <p class="gallery-description mb-g-d">「キャンピングカーで旅してみたい」そんな夢、ありませんか？
+                        <br>でも購入前に、運転感覚や装備を確かめたいですよね。
+                        ワンダーキャンピングカーなら、<br>
+                        1日17,000円〜で本格キャブコンをレンタル可能。
+                        ペットと一緒に、大切な人と大切な時間を過ごせます。
+                        千葉・東金から出発して、あなたらしい自由な旅を始めましょう！
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="pictures/2.png" alt="" class="second-gallery-img" width="100%">
+            </div>
+        </div>
     </div>
     <div>
-    <img src="pictures/2.png" alt="" class="second-gallery-img" width="100%">
-    </div>
-    </div>
-    </div>
-    <div> 
-    <img src="pictures/pngegg (33) 1.png" alt="" width="461px" class="pangeg-img">
+        <img src="pictures/pngegg (33) 1.png" alt="" width="461px" class="pangeg-img">
     </div>
 
     <!-- ===============img gallery Section====================== -->
@@ -116,190 +235,215 @@
 
     <!-- ===============first image with text Section====================== -->
     <div class="main-img-text">
-    <div class="container-img-text">
-    <h1 class="img-text-heading">ワンダーキャンピングカーレンタルの魅力</h1>
-    <div class="full-img-card">
-    <div class="img-text-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>01</span><h1>ペットも家族！<br>愛犬・愛猫と一緒に旅ができる</h1></div>
-    <p>犬・猫はもちろん、小動物もOK！大型犬も乗車可能です。<br>
-    ペット快適パックをご用意しているので、安心して大切な<br>
-    家族と一緒にキャンピングカー旅を楽しめます。ケージの<br>
-    用意も不要で、のびのびと車内で過ごせるのが魅力です。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26.png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
+        <div class="container-img-text">
+            <div class="vahical-main-heading">
+                <h1 class="img-text-heading ">ワンダーキャンピングカーレンタルの魅力</h1>
+                <h1 class="img-text-heading mbl-img-text-heading">ワンダーキャンピングカー</h1>
+                <h1 class="image-text-heading mbl-img-text-heading heading-brake">レンタルの魅力</h1>
+            </div>
+            <div class="full-img-card">
+                <div class="img-text-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>01</span>
+                            <h1>ペットも家族！<br>愛犬・愛猫と一緒に旅ができる</h1>
+                        </div>
+                        <p>犬・猫はもちろん、小動物もOK！大型犬も乗車可能です。
+                            ペット快適パックをご用意しているので、安心して大切な
+                            家族と一緒にキャンピングカー旅を楽しめます。ケージの
+                            用意も不要で、のびのびと車内で過ごせるのが魅力です。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
 
-    <!-- card 2 -->
-    <div class="full-img-card">
-    <div class="img-text-card reverse-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>02</span><h1>普通免許でOK！</h1></div>
-    <p>キャブコン初心者でも安心して運転できるワンダーキャン<br>
-    ピングカーで取り扱うカムロードやコルドバンクスは、普<br>
-    通免許で運転可能なサイズ設計。初めてのキャンピ<br>
-    ングカーでも、丁寧な説明と安全運転のアドバイスを行います<br>
-    ので、安心してスタートできます。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 40.png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
-    <!-- card 3 -->
-    <div class="full-img-card">
-    <div class="img-text-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>03</span><h1>FFヒーター完備で、<br>冬でも車内はポカポカ快適</h1></div>
-    <p>犬・猫はもちろん、小動物もOK！大型犬も乗車可能です。<br>
-    ペット快適パックをご用意しているので、安心して大切な<br>
-    家族と一緒にキャンピングカー旅を楽しめます。ケージの<br>
-    用意も不要で、のびのびと車内で過ごせるのが魅力です。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26 (1).png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
+            <!-- card 2 -->
+            <div class="full-img-card">
+                <div class="img-text-card reverse-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>02</span>
+                            <h1>普通免許でOK！</h1>
+                        </div>
+                        <p>キャブコン初心者でも安心して運転できるワンダーキャン
+                            ピングカーで取り扱うカムロードやコルドバンクスは、普
+                            通免許で運転可能なサイズ設計。初めてのキャンピ
+                            ングカーでも、丁寧な説明と安全運転のアドバイスを行います
+                            ので、安心してスタートできます。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 40.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="full-img-card">
+                <div class="img-text-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>03</span>
+                            <h1>FFヒーター完備で、<br>冬でも車内はポカポカ快適</h1>
+                        </div>
+                        <p>犬・猫はもちろん、小動物もOK！大型犬も乗車可能です。
+                            ペット快適パックをご用意しているので、安心して大切な
+                            家族と一緒にキャンピングカー旅を楽しめます。ケージの
+                            用意も不要で、のびのびと車内で過ごせるのが魅力です。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26 (1).png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
 
-    <!-- card 4 -->
-    <div class="full-img-card">
-    <div class="img-text-card reverse-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>04</span><h1>家庭用エアコン搭載で、<br>真夏の車中泊も快適に</h1></div>
-    <p>車内には家庭用エアコンを完備。真夏の暑い時期でも、涼<br>
-    しく快適な空間で過ごせます。お子様連れやペット同伴の<br>
-    旅でも、温度管理がしやすく安心です。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26 (2).png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
+            <!-- card 4 -->
+            <div class="full-img-card">
+                <div class="img-text-card reverse-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>04</span>
+                            <h1>家庭用エアコン搭載で、<br>真夏の車中泊も快適に</h1>
+                        </div>
+                        <p>車内には家庭用エアコンを完備。真夏の暑い時期でも、涼
+                            しく快適な空間で過ごせます。お子様連れやペット同伴の
+                            旅でも、温度管理がしやすく安心です。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26 (2).png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
 
-    <!-- card 5 -->
-    <div class="full-img-card">
-    <div class="img-text-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>05</span><h1>清潔管理を徹底！<br>気持ちよくご利用いただけます</h1></div>
-    <p>お客様に快適にご利用いただけるよう、車内の清掃・除菌<br>
-    を徹底しています。シーツや布団などのリネン類も毎回洗<br>
-    浄済み。清潔なキャンピングカーで、気持ちの良い旅をお<br>
-    楽しみください。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26 (3).png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
+            <!-- card 5 -->
+            <div class="full-img-card">
+                <div class="img-text-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>05</span>
+                            <h1>清潔管理を徹底！<br>気持ちよくご利用いただけます</h1>
+                        </div>
+                        <p>お客様に快適にご利用いただけるよう、車内の清掃・除菌
+                            を徹底しています。シーツや布団などのリネン類も毎回洗
+                            浄済み。清潔なキャンピングカーで、気持ちの良い旅をお
+                            楽しみください。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26 (3).png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
 
-    <!-- card 6 -->
-    <div class="full-img-card">
-    <div class="img-text-card reverse-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>06</span><h1>自家用車は店舗に駐車OK！<br>手ぶらでレンタルスタート</h1></div>
-    <p>ご自宅から車でお越しいただき、店舗駐車場（1台分完<br>
-    備）に停めてそのままキャンピングカーに乗り換え。帰り<br>
-    も駐車場で乗り換えるだけなので、スムーズに出発・帰宅<br>
-    できます。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26 (4).png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
-
-
-    <!-- card 7 -->
-    <div class="full-img-card">
-    <div class="img-text-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>07</span><h1>カムロード・コルドバンクスで<br>運転しやすさ抜群</h1></div>
-    <p>人気のキャブコン、カムロードとコルドバンクスをご用<br>
-    意。適度なサイズ感で、高速道路も一般道もストレスなく<br>
-    運転できます。車幅や車高に不安がある方でも、納車時の<br>
-    説明で安心してスタートできます。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Rectangle 26 (5).png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
-
+            <!-- card 6 -->
+            <div class="full-img-card">
+                <div class="img-text-card reverse-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>06</span>
+                            <h1>自家用車は店舗に駐車OK！<br>手ぶらでレンタルスタート</h1>
+                        </div>
+                        <p>ご自宅から車でお越しいただき、店舗駐車場（1台分完
+                            備）に停めてそのままキャンピングカーに乗り換え。帰り
+                            も駐車場で乗り換えるだけなので、スムーズに出発・帰宅
+                            できます。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26 (4).png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
 
 
-    <!-- card 8 -->
-    <div class="full-img-card ">
-    <div class="img-text-card reverse-card last-card">
-    <div class="image-text-text">
-    <div class="img-text-heading-main"><span>08</span><h1>平日17,000円〜！<br>リーズナブルな料金設定</h1></div>
-    <p>ワンダーキャンピングカーは、平日1日17,000円からご利<br>
-    用可能。週末やハイシーズンでも明確な料金設定で、予算<br>
-    に合わせてプランを選べます。初回特典としてオプション1<br>
-    点無料サービスも実施中です。</p>
-    </div>
-    <div class="img-text-img">
-    <img src="pictures/Group 5.png" alt="" width="100%">
-    </div>
-    </div>
-    </div>
-    </div>
+            <!-- card 7 -->
+            <div class="full-img-card">
+                <div class="img-text-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>07</span>
+                            <h1>カムロード・コルドバン<br>クスで運転しやすさ抜群</h1>
+                        </div>
+                        <p>人気のキャブコン、カムロードとコルドバンクスをご用
+                            意。適度なサイズ感で、高速道路も一般道もストレスなく
+                            運転できます。車幅や車高に不安がある方でも、納車時の
+                            説明で安心してスタートできます。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Rectangle 26 (5).png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- card 8 -->
+            <div class="full-img-card ">
+                <div class="img-text-card reverse-card last-card">
+                    <div class="image-text-text">
+                        <div class="img-text-heading-main"><span>08</span>
+                            <h1>平日17,000円〜！<br>リーズナブルな料金設定</h1>
+                        </div>
+                        <p>ワンダーキャンピングカーは、平日1日17,000円からご利
+                            用可能。週末やハイシーズンでも明確な料金設定で、予算
+                            に合わせてプランを選べます。初回特典としてオプション1
+                            点無料サービスも実施中です。</p>
+                    </div>
+                    <div class="img-text-img">
+                        <img src="pictures/Group 5.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ===============first image with text Section====================== -->
 
 
 
     <!-- ===============toy factory Section====================== -->
-    <section class="main-vehicle-section" >
-    <div class="vahical-main-heading">
-    <img src="pictures/Background.png" alt="">
-    <h1 class="img-text-heading">ワンダーキャンピングカー 車両紹介</h1>
-    </div>
+    <section class="main-vehicle-section">
+        <div class="vahical-main-heading">
+            <img src="pictures/Background.png" alt="">
+            <h1 class="img-text-heading">ワンダーキャンピングカー 車両紹介</h1>
+            <h1 class="img-text-heading mbl-img-text-heading">ワンダーキャンピングカー</h1>
+            <h1 class="image-text-heading mbl-img-text-heading heading-brake"> 車両紹介</h1>
+        </div>
 
 
-    <div class="main-toy-card">
-    <div class="inner-card">
-    <img src="pictures/Rectangle 30.png" alt="" width="600px">
+        <div class="main-toy-card">
+            <div class="inner-card">
+                <img src="pictures/Rectangle 30.png" alt="" width="600px">
 
-    <div class="factory-inner-content">
-    <div class="content-first-div"> <p class="filled-check">車両名</p> <h1>TOY FACTORY Vanlife</h1></div>
-    <div class="content-second-div">
-    <p class="content-second-div-para">
-    <span class="filled-check">乗車定員</span>
-    <span class="filled-check unfilled">5名</span>
-    </p>  
-    <p class="content-second-div-second-para ">
-    <span class="filled-check">就寝定員</span>
-    <span class="filled-check unfilled" >3名</span>
-    </p>
-    </div>
+                <div class="factory-inner-content">
+                    <div class="content-first-div">
+                        <p class="filled-check">車両名</p>
+                        <h1>TOY FACTORY Vanlife</h1>
+                    </div>
+                    <div class="content-second-div">
+                        <p class="content-second-div-para">
+                            <span class="filled-check">乗車定員</span>
+                            <span class="filled-check unfilled">5名</span>
+                        </p>
+                        <p class="content-second-div-second-para ">
+                            <span class="filled-check">就寝定員</span>
+                            <span class="filled-check unfilled">3名</span>
+                        </p>
+                    </div>
 
-    <div class="content-third-div">
-    <p class="filled-check unfilled">ベース車両</p>
-    <p class="filled-check unfilled">全長 / 全幅 / 全高</p>
-    <p class="filled-check unfilled">AT / ナビ / ETC</p>
-    </div>
+                    <div class="content-third-div">
+                        <p class="filled-check unfilled">ベース車両</p>
+                        <p class="filled-check unfilled">全長 / 全幅 / 全高</p>
+                        <p class="filled-check unfilled">AT / ナビ / ETC</p>
+                    </div>
 
-    <div class="content-third-div content-fourth-div">
-    <p class="filled-check unfilled">FFヒーター / サブバッテリー</p>
-    </div>
-    <div class="factory-btn">
-    <a href="">
-    <span>詳細を見る</span>
-    <span class="factory-svg"> 
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 10 18" fill="none">
+                    <div class="content-third-div content-fourth-div">
+                        <p class="filled-check unfilled">FFヒーター / サブバッテリー</p>
+                    </div>
+                    <div class="factory-btn">
+                        <a href="">
+                            <span>詳細を見る</span>
+                            <span class="factory-svg">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 10 18" fill="none">
     <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="white" stroke-width="2"/> -->
-    <img src="pictures/arroww.png" alt="">
-    </svg>
-    </span>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
+                                <img src="pictures/arroww.png" alt="">
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -309,70 +453,80 @@
 
     <!-- ===============table Section====================== -->
     <div class="main-table-section">
-    <div class="vahical-main-heading">
-    <img src="pictures/Background.png" alt="">
-    <h1 class="img-text-heading">キャンピングカー料金表</h1>
-    </div>
+        <div class="vahical-main-heading">
+            <img src="pictures/Background.png" alt="">
+            <h1 class="img-text-heading">キャンピングカー料金表</h1>
+            <h1 class="img-text-heading mbl-img-text-heading">キャンピングカー料金表</h1>
+        </div>
 
 
-    <div class="container-table">
-    <div class="cards-wrapper">
-    <!-- 駐車プラン -->
-    <div class="card parking">
-    <div class="card-title">駐車プラン</div>
-    <div class="main-content-card">
-    <div class="label">エリア別料金</div>
-    <div class="price">5,500 <strong> 円</strong><em>～</em>17,600<strong>円</strong></div>
-    </div>
-    <div class="note">宮業時間内 <span>+3,300<small>円</small></span></div>
-    </div>
+        <div class="container-table">
+            <div class="cards-wrapper pricing-slider owl-carousel">
 
-    <!-- 来店プラン -->
-    <div class="card visiting parking">
-    <div class="card-title">来店プラン</div>
+                <!-- 駐車プラン -->
 
-    <div class="plan-item">
-    <div class="plan-label">軽車</div>
-    <div class="plan-price">17,000<small>円</small></div>
-    </div>
+                <div class="card parking">
+                    <div class="card-title">駐車プラン</div>
+                    <div class="main-content-card">
+                        <div class="label">エリア別料金</div>
+                        <div class="price">5,500 <strong> 円</strong><em>～</em>17,600<strong>円</strong></div>
+                    </div>
+                    <div class="note">宮業時間内 <span>+3,300<small>円</small></span></div>
+                </div>
 
-    <div class="plan-item">
-    <div class="plan-label">普通</div>
-    <div class="plan-price">24,000<small>円</small></div>
-    </div>
+                <!-- 来店プラン -->
 
-    <div class="plan-item last-second-plan-item">
-    <div class="plan-label">バン</div>
-    <div class="plan-price">30,000<small>円</small></div>
-    </div>
+                <div class="card visiting parking">
+                    <div class="card-title">来店プラン</div>
 
-    <div class="note">営業時間外 <span>+3,300<small>円</small></span></div>
-    </div>
+                    <div class="plan-item">
+                        <div class="plan-label">平日</div>
+                        <div class="plan-price">17,000<small>円</small></div>
+                    </div>
 
-    <!-- 駅距車プラン -->
-    <div class="card station parking">
-    <div class="card-title">駅距車プラン</div>
-    <div class="card-station-end">
-    <div class="price">3,300<small>円</small><span>～</span>11,000<small>円</small></div>
-    <div class="note">宮業時間内 <span>+3,300<small>円</small></span></div>
-    </div>
-    </div>
-    </div>
+                    <div class="plan-item">
+                        <div class="plan-label">土日</div>
+                        <div class="plan-price">24,000<small>円</small></div>
+                    </div>
 
-    <div class="button-container">
-    <button class="action-button">
-    料金プラン詳細を見る
-    <div class="circle-icon">
-    <span class="action-circle">
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 8 14" fill="none">
+                    <div class="plan-item last-second-plan-item">
+                        <div class="plan-label">バン</div>
+                        <div class="plan-price">30,000<small>円</small></div>
+                    </div>
+
+                    <div class="note">営業時間外 <span>+3,300<small>円</small></span></div>
+                </div>
+
+
+                <!-- 駅距車プラン -->
+
+                <div class="card station parking">
+                    <div class="card-title">駅距車プラン</div>
+                    <div class="card-station-end">
+                        <div class="price">3,300<small>円</small><span>～</span>11,000<small>円</small></div>
+                        <div class="note">宮業時間内 <span>+3,300<small>円</small></span></div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="button-container">
+                <button class="action-button">
+                    料金プラン詳細を見る
+                    <div class="circle-icon">
+                        <span class="action-circle">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 8 14" fill="none">
     <path d="M0.752686 0.658203L6.00269 6.6582L0.752686 12.6582" stroke="white" stroke-width="2"/>
     </svg> -->
-    <img src="pictures/arroww.png" alt="">
-    </span>
-    </div>
-    </button>
-    </div>
-    </div>
+                            <img src="pictures/arroww.png" alt="">
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
 
     </div>
 
@@ -385,463 +539,415 @@
     <!-- ===============steps workflow Section====================== -->
 
     <div class="vahical-main-heading steps-workflow-heading">
-    <img src="pictures/Background.png" alt="">
-    <h1 class="img-text-heading">レンタルまでの流れ</h1>
+        <img src="pictures/Background.png" alt="">
+        <h1 class="img-text-heading">レンタルまでの流れ</h1>
+        <h1 class="img-text-heading mbl-img-text-heading">レンタルまでの流れ</h1>
     </div>
 
 
     <div class="slider-container">
-    <div class="slider-wrapper" id="sliderWrapper">
-    <!-- Card 1 -->
-    <div class="card-workflow">
-    <img src="pictures/ONE.png" alt="Step 1" class="card-image">
-    <h3 class="card-title">STEP 01</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタルのご予約</p>
-    <p class="card-description">
-    WEBサイトの予約フォームまた<br>
-    は公式LINEから、ご希望の日程 <br>
-    と車両をご予約ください。<br>
-    お電話でのご予約も承っておりま<br>
-    す
-    </p>
-    </div>
-    </div>
-    </div>
+        <div class="owl-carousel workflow-slider">
+            <!-- Card 1 -->
+            <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/ONE.png" alt="Step 1" class="card-image">
+                    <h3 class="card-title">STEP 01</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">レンタルのご予約</p>
+                            <p class="card-description">
+                                WEBサイトの予約フォームまた<br>
+                                は公式LINEから、ご希望の日程 <br>
+                                と車両をご予約ください。<br>
+                                お電話でのご予約も承っておりま<br>
+                                す
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/TWO.png" alt="Step 2" class="card-image">
+                    <h3 class="card-title">STEP 02</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">レンタルステーションへご来店</p>
+                            <p class="card-description">
+                                ご予約のお時間までに、千葉県東<br>
+                                金市のレンタルステーションまで<br>
+                                お越しください。店舗前に駐車場<br>
+                                （1台分）を完備していますの<br>
+                                で、ご自身のお車を停めていただ<br>
+                                けます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/THREE.png" alt="Step 3" class="card-image">
+                    <h3 class="card-title">STEP 03</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">レンタル内容のご説明</p>
+                            <p class="card-description">
+                                担当スタッフより、レンタル時の<br>
+                                注意事項、保険内容、返却時の流<br>
+                                れなどを丁寧にご説明いたしま<br>
+                                す。ご不明な点はお気軽にお尋ね<br>
+                                ください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/FOUR.png" alt="Step 4" class="card-image">
+                    <h3 class="card-title">STEP 04</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">車両説明と操作方法の<br>レクチャー</p>
+                            <p class="card-description">
+                                実際の車両へ移動し、運転のポイ<br>
+                                ント、車内設備の使い方、FF<br>
+                                ヒーター・エアコンの操作方法な<br>
+                                どをスタッフが実演しながらご案<br>
+                                内します。初めての方でも安心で<br>
+                                す。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/FIVE.png" alt="Step 5" class="card-image">
+                    <h3 class="card-title">STEP 05</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">荷物を積んで、いざ出発！</p>
+                            <p class="card-description">
+                                自家用車から荷物やペット用品を<br>
+                                積み替えたら、さあ出発！大切な<br>
+                                人や愛犬・愛猫と一緒に、特別な<br>
+                                思い出を作る旅へ出かけましょう
 
-    <!-- Card 2 -->
-    <div class="card-workflow">
-    <img src="pictures/TWO.png" alt="Step 2" class="card-image">
-    <h3 class="card-title">STEP 02</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタルステーションへご来店</p>
-    <p class="card-description">
-    ご予約のお時間までに、千葉県東<br>
-    金市のレンタルステーションまで<br>
-    お越しください。店舗前に駐車場<br>
-    （1台分）を完備していますの<br>
-    で、ご自身のお車を停めていただ<br>
-    けます。
-    </p>
-    </div>
-    </div>
-    </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Card 3 -->
-    <div class="card-workflow">
-    <img src="pictures/THREE.png" alt="Step 3" class="card-image">
-    <h3 class="card-title">STEP 03</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタル内容のご説明</p>
-    <p class="card-description">
-    担当スタッフより、レンタル時の<br>
-    注意事項、保険内容、返却時の流<br>
-    れなどを丁寧にご説明いたしま<br>
-    す。ご不明な点はお気軽にお尋ね<br>
-    ください。
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card-workflow">
-    <img src="pictures/FOUR.png" alt="Step 4" class="card-image">
-    <h3 class="card-title">STEP 04</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">車両説明と操作方法の<br>レクチャー</p>
-    <p class="card-description">
-    実際の車両へ移動し、運転のポイ<br>
-    ント、車内設備の使い方、FF<br>
-    ヒーター・エアコンの操作方法な<br>
-    どをスタッフが実演しながらご案<br>
-    内します。初めての方でも安心で<br>
-    す。
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card-workflow">
-    <img src="pictures/FIVE.png" alt="Step 5" class="card-image">
-    <h3 class="card-title">STEP 05</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">荷物を積んで、いざ出発！</p>
-    <p class="card-description">
-    自家用車から荷物やペット用品を<br>
-    積み替えたら、さあ出発！大切な<br>
-    人や愛犬・愛猫と一緒に、特別な<br>
-    思い出を作る旅へ出かけましょう
-
-    </p>
-    </div>
-    </div>
-    </div>
-
-
-    <!-- seconddd -->
-
-    <!-- Card 1 -->
-    <div class="card-workflow">
-    <img src="pictures/ONE.png" alt="Step 1" class="card-image">
-    <h3 class="card-title">STEP 01</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタルのご予約</p>
-    <p class="card-description">
-    WEBサイトの予約フォームまた<br>
-    は公式LINEから、ご希望の日程 <br>
-    と車両をご予約ください。<br>
-    お電話でのご予約も承っておりま<br>
-    す
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card-workflow">
-    <img src="pictures/TWO.png" alt="Step 2" class="card-image">
-    <h3 class="card-title">STEP 02</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタルステーションへご来店</p>
-    <p class="card-description">
-    ご予約のお時間までに、千葉県東<br>
-    金市のレンタルステーションまで<br>
-    お越しください。店舗前に駐車場<br>
-    （1台分）を完備していますの<br>
-    で、ご自身のお車を停めていただ<br>
-    けます。
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card-workflow">
-    <img src="pictures/THREE.png" alt="Step 3" class="card-image">
-    <h3 class="card-title">STEP 03</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">レンタル内容のご説明</p>
-    <p class="card-description">
-    担当スタッフより、レンタル時の<br>
-    注意事項、保険内容、返却時の流<br>
-    れなどを丁寧にご説明いたしま<br>
-    す。ご不明な点はお気軽にお尋ね<br>
-    ください。
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card-workflow">
-    <img src="pictures/FOUR.png" alt="Step 4" class="card-image">
-    <h3 class="card-title">STEP 04</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">車両説明と操作方法の<br>レクチャー</p>
-    <p class="card-description">
-    実際の車両へ移動し、運転のポイ<br>
-    ント、車内設備の使い方、FF<br>
-    ヒーター・エアコンの操作方法な<br>
-    どをスタッフが実演しながらご案<br>
-    内します。初めての方でも安心で<br>
-    す。
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card-workflow">
-    <img src="pictures/FIVE.png" alt="Step 5" class="card-image">
-    <h3 class="card-title">STEP 05</h3>
-    <div class="card-content">
-    <div class="inner-workflow-content">
-    <p class="card-heading">荷物を積んで、いざ出発！</p>
-    <p class="card-description">
-    自家用車から荷物やペット用品を<br>
-    積み替えたら、さあ出発！大切な<br>
-    人や愛犬・愛猫と一緒に、特別な<br>
-    思い出を作る旅へ出かけましょう
-
-    </p>
-    </div>
-    </div>
-    </div>
-
-    <!-- seconddd -->
+            <!-- <div class="item">
+                <div class="card-workflow">
+                    <img src="pictures/ONE.png" alt="Step 1" class="card-image">
+                    <h3 class="card-title">STEP 01</h3>
+                    <div class="card-content">
+                        <div class="inner-workflow-content">
+                            <p class="card-heading">レンタルのご予約</p>
+                            <p class="card-description">
+                                WEBサイトの予約フォームまた<br>
+                                は公式LINEから、ご希望の日程 <br>
+                                と車両をご予約ください。<br>
+                                お電話でのご予約も承っておりま<br>
+                                す
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
 
 
-
-
-
-    </div>
-    </div>
-
-    <div class="slider-controls">
-    <button class="slider-button">詳細・確認サービスについて
-    <span class="action-workflow">
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 8 14" fill="none">
+        </div>
+        <div class="button-container">
+            <button class="action-button">
+                料金プラン詳細を見る
+                <div class="circle-icon">
+                    <span class="action-circle">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 8 14" fill="none">
     <path d="M0.752686 0.658203L6.00269 6.6582L0.752686 12.6582" stroke="white" stroke-width="2"/>
     </svg> -->
-    <img src="pictures/arroww.png" alt="">
-    </span>
-    </button>
+                        <img src="pictures/arroww.png" alt="">
+                    </span>
+                </div>
+            </button>
+        </div>
     </div>
 
-
-
-    <!-- ===============steps workflow Section====================== -->
-
-
-    <!-- ===============blogs card Section====================== -->
+    <!-- Blog Card Section -->
     <div class="grid-top-main-column">
-    <div class="vahical-main-heading blog-card-heading">
-    <img src="pictures/Background.png" alt="">
-    <h1 class="img-text-heading">ワンダーキャンピングカーブログ</h1>
-    </div>
+        <div class="vahical-main-heading blog-card-heading">
+            <img src="pictures/Background.png" alt="">
+            <h1 class="img-text-heading">ワンダーキャンピングカーブログ</h1>
+            <h1 class="image-text-heading mbl-img-text-heading">ワンダーキャンピングカー</h1>
+            <h1 class="image-text-heading mbl-img-text-heading heading-brake new-blog-brake">ブログ</h1>
 
-    <div class="grid-container">
+        </div>
 
-    <div class="grid-wrapper">
-    <!-- Card 1 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+        <div class="grid-container">
 
-    <!-- Card 2 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+            <div class="grid-wrapper">
+                <!-- Card 1 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 3 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 2 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 4 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 3 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 5 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 4 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 6 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 5 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 7 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 6 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 8 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 7 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 9 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 8 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 10 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 9 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 11 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
+                <!-- Card 10 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <!-- Card 12 -->
-    <div class="grid-card">
-    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
-    <div class="grid-card-content">
-    <div>
-    <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
-    </div>
-    <p class="grid-card-date">2025年7月27日</p>
-    </div>
-    </div>
-    </div>
-    </div>
+                <!-- Card 11 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
 
-    <div class="main-new-banner">
-    <div>
-    <img src="pictures/Rectangle 81.png" alt="" class="second-last-image">
-    </div>
-    <div class="main-center-img-div">
-    <div class="slide-bottom-image slide-custom-default">
-    <div class="main-custom-van">
-    <img src="pictures/pngegg (28) 1 (1).png" alt="Van" class="">
-    <div class="main-new">
-    <p>ワンダーキャンピングカーの<br>
-    レンタルキャンピングカー</p>
-    <div class="van-btn-main">
-    <a href="">
-    <span>今すぐ予約する！</span>
-    <span class="hero-svg">
-    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-    <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585" stroke="#97CAD9" stroke-width="2"/>
-    </svg>
-    </span>
-    <!-- <img src="pictures/footerrarrow.png" alt=""> -->
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div>
-    <img src="pictures/Kono_yuske_Dress_this_woman_in_a_suit._Dress_her_with_a_white_shirt_undernea_d5ece766-5969-4ecf-9358-f52cf987eeca 1.png" alt="" >
-    </div>
-    </div>
-    <div><img src="pictures/Rectangle 80.png" alt="" class="second-last-first-image"></div>
-    </div>
+                <!-- Card 12 -->
+                <div class="grid-card">
+                    <img src="pictures/Rectangle 56.png" alt="Camper Van" class="grid-card-image">
+                    <div class="grid-card-content">
+                        <div>
+                            <h3 class="grid-card-title">【ついに土岐店に登場!】 大人気 DUCATOベースの 「gioia」 レンタカーサービス開始!</h3>
+                        </div>
+                        <p class="grid-card-date">2025年7月27日</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-new-banner">
+            <div>
+                <img src="pictures/Rectangle 81.png" alt="" class="second-last-image">
+            </div>
+            <div class="main-center-img-div">
+                <div class="slide-bottom-image slide-custom-default">
+                    <div class="main-custom-van">
+                        <img class="vimgg" src="pictures/pngegg (28) 1 (1).png" alt="Van" class="">
+                        <div class="main-new">
+                            <p>ワンダーキャンピングカーの<br>
+                                レンタルキャンピングカー</p>
+                            <div class="van-btn-main">
+                                <a href="">
+                                    <span>今すぐ予約する！</span>
+                                    <!-- <span class="hero-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18"
+                                            viewBox="0 0 10 18" fill="none">
+                                            <path d="M0.752686 0.658508L7.75269 8.65851L0.752686 16.6585"
+                                                stroke="#97CAD9" stroke-width="2" />
+                                        </svg>
+                                    </span> -->
+                                    <img class="ftarr" src="pictures/footerrarrow.png" alt="">
+                                </a>
+                                <div class="sky-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lady-image">
+                    <img src="pictures/Kono_yuske_Dress_this_woman_in_a_suit._Dress_her_with_a_white_shirt_undernea_d5ece766-5969-4ecf-9358-f52cf987eeca 1.png"
+                        alt="">
+                </div>
+            </div>
+            <div><img src="pictures/Rectangle 80.png" alt="" class="second-last-first-image"></div>
+        </div>
     </div>
 
     <!-- ===============blogs card Section====================== -->
-    
-    
+
+
     <!-- ===============footer Section====================== -->
-  <footer>
+    <footer>
         <div class="footer-wrapper">
             <!-- Left Section: Logo and Info -->
             <div class="footer-left">
-                <div>
-                <div class="footer-logo">
-                <img src="pictures/Group 3.png" alt="">
-                </div>
-                <p class="footer-tagline">楽天家なキャンプ一族シンガー</p>
-                <p class="footer-email">info@wondercampingcar.jp</p>
-                <div class="footer-social">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M14 3.08984C13.7448 3.20833 13.4782 3.30632 13.2002 3.38379C12.9222 3.46126 12.6374 3.51367 12.3457 3.54102C12.6465 3.36784 12.9062 3.14453 13.125 2.87109C13.3438 2.59766 13.5078 2.29232 13.6172 1.95508C13.3346 2.11914 13.0407 2.26042 12.7354 2.37891C12.43 2.4974 12.1133 2.58854 11.7852 2.65234C11.5299 2.37891 11.2201 2.16016 10.8555 1.99609C10.4909 1.83203 10.1035 1.75 9.69336 1.75C9.30143 1.75 8.92773 1.82292 8.57227 1.96875C8.22591 2.1237 7.92285 2.33105 7.66309 2.59082C7.40332 2.85059 7.20052 3.15365 7.05469 3.5C6.89974 3.84635 6.82227 4.22005 6.82227 4.62109C6.82227 4.73047 6.8291 4.83984 6.84277 4.94922C6.85645 5.05859 6.8724 5.16797 6.89062 5.27734C6.29818 5.25 5.72396 5.15885 5.16797 5.00391C4.60286 4.84896 4.06966 4.6416 3.56836 4.38184C3.06706 4.12207 2.59766 3.81445 2.16016 3.45898C1.72266 3.10352 1.32617 2.70703 0.970703 2.26953C0.852214 2.47917 0.758789 2.70703 0.69043 2.95312C0.62207 3.19922 0.587891 3.45443 0.587891 3.71875C0.587891 4.21094 0.704102 4.66667 0.936523 5.08594C1.16895 5.50521 1.47656 5.84701 1.85938 6.11133C1.63151 6.10221 1.40592 6.06576 1.18262 6.00195C0.95931 5.93815 0.751953 5.85156 0.560547 5.74219C0.560547 5.7513 0.560547 5.75814 0.560547 5.7627C0.560547 5.76725 0.560547 5.77409 0.560547 5.7832C0.560547 6.47591 0.781576 7.08659 1.22363 7.61523C1.66569 8.14388 2.21484 8.47201 2.87109 8.59961C2.7526 8.63607 2.62956 8.66113 2.50195 8.6748C2.37435 8.68848 2.24219 8.69531 2.10547 8.69531C2.01432 8.69531 1.92546 8.69076 1.83887 8.68164C1.75228 8.67253 1.66341 8.66341 1.57227 8.6543C1.75456 9.2194 2.08952 9.6888 2.57715 10.0625C3.06478 10.4362 3.62305 10.6322 4.25195 10.6504C3.75977 11.0332 3.21061 11.334 2.60449 11.5527C1.99837 11.7715 1.35807 11.8809 0.683594 11.8809C0.565104 11.8809 0.448893 11.8763 0.334961 11.8672C0.221029 11.8581 0.109375 11.849 0 11.8398C0.31901 12.0404 0.651693 12.2227 0.998047 12.3867C1.3444 12.5417 1.70215 12.6738 2.07129 12.7832C2.44043 12.8926 2.82096 12.9792 3.21289 13.043C3.60482 13.0977 4.0013 13.125 4.40234 13.125C5.72396 13.125 6.89062 12.8789 7.90234 12.3867C8.92318 11.8854 9.77995 11.2428 10.4727 10.459C11.1654 9.67513 11.6895 8.80013 12.0449 7.83398C12.4004 6.85872 12.5781 5.89714 12.5781 4.94922C12.5781 4.88542 12.5758 4.82389 12.5713 4.76465C12.5667 4.7054 12.5645 4.64388 12.5645 4.58008C12.847 4.37956 13.109 4.15397 13.3506 3.90332C13.5921 3.65267 13.8086 3.38151 14 3.08984Z" fill="white"/>
-                </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M7 1.25781C7.9388 1.25781 8.55176 1.26009 8.83887 1.26465C9.12598 1.26921 9.45638 1.2806 9.83008 1.29883C10.1673 1.31706 10.4362 1.35124 10.6367 1.40137C10.8372 1.4515 11.0013 1.49935 11.1289 1.54492C11.293 1.60872 11.4365 1.68164 11.5596 1.76367C11.6826 1.8457 11.8079 1.94596 11.9355 2.06445C12.054 2.18294 12.1543 2.30599 12.2363 2.43359C12.3184 2.5612 12.3913 2.70703 12.4551 2.87109C12.5007 2.98958 12.5485 3.14909 12.5986 3.34961C12.6488 3.55013 12.6829 3.82357 12.7012 4.16992C12.7103 4.5345 12.7194 4.86263 12.7285 5.1543C12.7376 5.44596 12.7422 6.0612 12.7422 7C12.7422 7.92969 12.7376 8.54036 12.7285 8.83203C12.7194 9.1237 12.7103 9.45182 12.7012 9.81641C12.6829 10.1628 12.6488 10.4362 12.5986 10.6367C12.5485 10.8372 12.5007 10.9967 12.4551 11.1152C12.3913 11.2793 12.3184 11.4251 12.2363 11.5527C12.1543 11.6803 12.054 11.8034 11.9355 11.9219C11.8079 12.0495 11.6826 12.1543 11.5596 12.2363C11.4365 12.3184 11.293 12.3913 11.1289 12.4551C11.0013 12.5007 10.8372 12.5485 10.6367 12.5986C10.4362 12.6488 10.1673 12.6784 9.83008 12.6875C9.45638 12.7057 9.12598 12.7171 8.83887 12.7217C8.55176 12.7262 7.9388 12.7285 7 12.7285C6.07031 12.7285 5.45964 12.7262 5.16797 12.7217C4.8763 12.7171 4.54362 12.7057 4.16992 12.6875C3.83268 12.6784 3.5638 12.6488 3.36328 12.5986C3.16276 12.5485 2.9987 12.5007 2.87109 12.4551C2.71615 12.3913 2.57487 12.3184 2.44727 12.2363C2.31966 12.1543 2.19661 12.0495 2.07812 11.9219C1.95052 11.8034 1.8457 11.6803 1.76367 11.5527C1.68164 11.4251 1.60872 11.2839 1.54492 11.1289C1.49935 11.0013 1.4515 10.8372 1.40137 10.6367C1.35124 10.4362 1.32161 10.1673 1.3125 9.83008C1.29427 9.45638 1.28288 9.1237 1.27832 8.83203C1.27376 8.54036 1.27148 7.92969 1.27148 7C1.27148 6.0612 1.27376 5.44596 1.27832 5.1543C1.28288 4.86263 1.29427 4.5345 1.3125 4.16992C1.32161 3.83268 1.35124 3.5638 1.40137 3.36328C1.4515 3.16276 1.49935 2.9987 1.54492 2.87109C1.60872 2.70703 1.68164 2.56348 1.76367 2.44043C1.8457 2.31738 1.94596 2.19206 2.06445 2.06445C2.19206 1.94596 2.31738 1.8457 2.44043 1.76367C2.56348 1.68164 2.70703 1.60872 2.87109 1.54492C2.9987 1.49935 3.16276 1.4515 3.36328 1.40137C3.5638 1.35124 3.83268 1.31706 4.16992 1.29883C4.54362 1.2806 4.87402 1.26921 5.16113 1.26465C5.44824 1.26009 6.0612 1.25781 7 1.25781ZM7 0C6.05208 0 5.42773 0.00227833 5.12695 0.00683594C4.82617 0.0113935 4.48893 0.0227861 4.11523 0.0410156C3.74154 0.0592451 3.42025 0.0957031 3.15137 0.150391C2.88249 0.205078 2.63867 0.277995 2.41992 0.369141C2.18294 0.460286 1.96419 0.569661 1.76367 0.697266C1.56315 0.82487 1.36719 0.984375 1.17578 1.17578C0.984375 1.36719 0.82487 1.56315 0.697266 1.76367C0.569661 1.96419 0.460286 2.18294 0.369141 2.41992C0.277995 2.63867 0.205078 2.88249 0.150391 3.15137C0.0957031 3.42025 0.0592448 3.74154 0.0410156 4.11523C0.0227865 4.48893 0.0113932 4.82617 0.00683594 5.12695C0.00227865 5.42773 0 6.05208 0 7C0 7.94792 0.00227865 8.57227 0.00683594 8.87305C0.0113932 9.17383 0.0227865 9.51107 0.0410156 9.88477C0.0592448 10.2585 0.0957031 10.5798 0.150391 10.8486C0.205078 11.1175 0.277995 11.3613 0.369141 11.5801C0.460286 11.8171 0.569661 12.0358 0.697266 12.2363C0.82487 12.4368 0.984375 12.6328 1.17578 12.8242C1.36719 13.0156 1.56315 13.1751 1.76367 13.3027C1.96419 13.4303 2.18294 13.5397 2.41992 13.6309C2.63867 13.7129 2.88249 13.7835 3.15137 13.8428C3.42025 13.902 3.74154 13.9408 4.11523 13.959C4.48893 13.9772 4.82617 13.9886 5.12695 13.9932C5.42773 13.9977 6.05208 14 7 14C7.94792 14 8.57227 13.9977 8.87305 13.9932C9.17383 13.9886 9.51107 13.9772 9.88477 13.959C10.2585 13.9408 10.5798 13.902 10.8486 13.8428C11.1175 13.7835 11.3613 13.7129 11.5801 13.6309C11.8079 13.5397 12.0221 13.4303 12.2227 13.3027C12.4232 13.1751 12.6237 13.0156 12.8242 12.8242C13.0156 12.6328 13.1751 12.4368 13.3027 12.2363C13.4303 12.0358 13.5397 11.8171 13.6309 11.5801C13.7129 11.3613 13.7835 11.1175 13.8428 10.8486C13.902 10.5798 13.9362 10.2585 13.9453 9.88477C13.9635 9.51107 13.9749 9.17383 13.9795 8.87305C13.984 8.57227 13.9863 7.94792 13.9863 7C13.9863 6.05208 13.984 5.42773 13.9795 5.12695C13.9749 4.82617 13.9635 4.48893 13.9453 4.11523C13.9362 3.74154 13.902 3.42025 13.8428 3.15137C13.7835 2.88249 13.7129 2.63867 13.6309 2.41992C13.5397 2.19206 13.4303 1.97559 13.3027 1.77051C13.1751 1.56543 13.0156 1.36719 12.8242 1.17578C12.6328 0.984375 12.4368 0.82487 12.2363 0.697266C12.0358 0.569661 11.8171 0.460286 11.5801 0.369141C11.3613 0.287109 11.1175 0.216472 10.8486 0.157227C10.5798 0.0979815 10.2585 0.0592451 9.88477 0.0410156C9.51107 0.0227861 9.17383 0.0113935 8.87305 0.00683594C8.57227 0.00227833 7.94792 0 7 0ZM7 3.4043C6.50781 3.4043 6.04297 3.5 5.60547 3.69141C5.16797 3.8737 4.78516 4.12891 4.45703 4.45703C4.12891 4.78516 3.8737 5.16797 3.69141 5.60547C3.5 6.04297 3.4043 6.50781 3.4043 7C3.4043 7.49219 3.5 7.95703 3.69141 8.39453C3.8737 8.83203 4.12891 9.21484 4.45703 9.54297C4.78516 9.87109 5.16797 10.1263 5.60547 10.3086C6.04297 10.5 6.50781 10.5957 7 10.5957C7.49219 10.5957 7.95703 10.5 8.39453 10.3086C8.83203 10.1263 9.21484 9.87109 9.54297 9.54297C9.87109 9.21484 10.1263 8.83203 10.3086 8.39453C10.5 7.95703 10.5957 7.49219 10.5957 7C10.5957 6.50781 10.5 6.04297 10.3086 5.60547C10.1263 5.16797 9.87109 4.78516 9.54297 4.45703C9.21484 4.12891 8.83203 3.8737 8.39453 3.69141C7.95703 3.5 7.49219 3.4043 7 3.4043ZM7 9.33789C6.35286 9.33789 5.80143 9.11003 5.3457 8.6543C4.88997 8.19857 4.66211 7.64714 4.66211 7C4.66211 6.35286 4.88997 5.80143 5.3457 5.3457C5.80143 4.88997 6.35286 4.66211 7 4.66211C7.64714 4.66211 8.19857 4.88997 8.6543 5.3457C9.11003 5.80143 9.33789 6.35286 9.33789 7C9.33789 7.64714 9.11003 8.19857 8.6543 8.6543C8.19857 9.11003 7.64714 9.33789 7 9.33789ZM11.5801 3.26758C11.5801 3.49544 11.498 3.69141 11.334 3.85547C11.1699 4.01953 10.9694 4.10156 10.7324 4.10156C10.5046 4.10156 10.3086 4.01953 10.1445 3.85547C9.98047 3.69141 9.89844 3.49544 9.89844 3.26758C9.89844 3.0306 9.98047 2.83008 10.1445 2.66602C10.3086 2.50195 10.5046 2.41992 10.7324 2.41992C10.9694 2.41992 11.1699 2.50195 11.334 2.66602C11.498 2.83008 11.5801 3.0306 11.5801 3.26758Z" fill="white"/>
-                </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M1.85938 10.2676C1.34896 10.2676 0.911458 10.4499 0.546875 10.8145C0.182292 11.179 0 11.6165 0 12.127C0 12.6374 0.182292 13.0749 0.546875 13.4395C0.911458 13.804 1.34896 13.9863 1.85938 13.9863C2.37891 13.9863 2.82096 13.804 3.18555 13.4395C3.55013 13.0749 3.73242 12.6374 3.73242 12.127C3.73242 11.6165 3.55013 11.179 3.18555 10.8145C2.82096 10.4499 2.37891 10.2676 1.85938 10.2676ZM0 4.75781V7.4375C0.4375 7.4375 0.865885 7.47852 1.28516 7.56055C1.70443 7.65169 2.11003 7.77702 2.50195 7.93652C2.89388 8.09603 3.27214 8.29883 3.63672 8.54492C3.99219 8.7819 4.32487 9.05534 4.63477 9.36523C4.94466 9.67513 5.2181 10.0078 5.45508 10.3633C5.69206 10.7188 5.8903 11.0924 6.0498 11.4844C6.20931 11.8763 6.33464 12.2865 6.42578 12.7148C6.50781 13.1341 6.54883 13.5625 6.54883 14H9.24219C9.24219 12.724 9.00065 11.5254 8.51758 10.4043C8.0345 9.2832 7.3737 8.30339 6.53516 7.46484C5.69661 6.6263 4.7168 5.9655 3.5957 5.48242C2.47461 4.99935 1.27604 4.75781 0 4.75781ZM0 0V2.67969C1.55859 2.67969 3.02604 2.98047 4.40234 3.58203C5.76953 4.17448 6.96582 4.98112 7.99121 6.00195C9.0166 7.02279 9.82552 8.22135 10.418 9.59766C11.0104 10.974 11.3066 12.4414 11.3066 14H14C14 12.0677 13.6309 10.2539 12.8926 8.55859C12.1634 6.85417 11.1654 5.36849 9.89844 4.10156C8.63151 2.83464 7.14583 1.83659 5.44141 1.10742C3.74609 0.369141 1.93229 0 0 0Z" fill="white"/>
-                </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.94488 2.49707C5.16988 2.49707 3.25456 2.6019 1.94284 2.69139C0.998233 2.75583 0.244784 3.4899 0.161733 4.43305C0.080903 5.35098 0.000131907 6.49106 1.6197e-07 7.38279C-0.000135228 8.29919 0.0846318 9.47704 0.16746 10.4089C0.248789 11.324 0.962081 12.046 1.87547 12.144C3.31713 12.2987 5.47355 12.4971 7.05512 12.4971C8.71378 12.4971 10.9145 12.2789 12.2851 12.1217C13.0664 12.0321 13.6988 11.4743 13.8035 10.6948C13.9048 9.9408 14 8.84336 14 7.38279C14 6.19928 13.9005 5.10225 13.7968 4.28018C13.6865 3.40624 12.9661 2.76225 12.0873 2.70106C10.7744 2.60964 8.78431 2.49707 6.94488 2.49707ZM5.84252 9.5454L9.14961 7.55454L5.84252 5.56368V9.5454Z" fill="white"/>
-                </svg></a>
-                </div>
-            </div>
-            <div class="main-footer-right">
-<div class="footer-buttons">
-                <button class="footer-btn">お問い合わせ</button>
-                <button class="footer-btn">無料カタログ請求</button>
-                <button class="footer-btn">ご予約手続き</button>
-            </div>
-<div class="footer-right">
-                <div class="footer-col">
-                    <a href="#" class="footer-link">ホーム</a>
-                    <a href="#" class="footer-link">利用ガイド</a>
-                </div>
-                <div class="footer-col">
-                    <a href="#" class="footer-link">新情報</a>
-                    <a href="#" class="footer-link">ブログ</a>
-                </div>
-                <div class="footer-col">
-                    <a href="#" class="footer-link">料金プラン</a>
-                </div>
-                <div class="footer-col">
-                    <a href="#" class="footer-link">よくあるご質問</a>
-                </div>
-            </div>
 
-            </div>
+                <div class="mbl-first-footer">
+                    <div class="footer-buttons mbl-btns">
+                        <button class="footer-btn">お問い合わせ</button>
+                        <button class="footer-btn">無料カタログ請求</button>
+                        <button class="footer-btn">ご予約手続き</button>
+                    </div>
+                    <div>
+                        <div class="footer-logo">
+                            <img src="pictures/Group 3.png" alt="">
+                        </div>
+                        <p class="footer-tagline">楽天家なキャンプ一族シンガー</p>
+                        <p class="footer-email">info@wondercampingcar.jp</p>
+                        <div class="footer-social">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 14 14" fill="none">
+                                    <path
+                                        d="M14 3.08984C13.7448 3.20833 13.4782 3.30632 13.2002 3.38379C12.9222 3.46126 12.6374 3.51367 12.3457 3.54102C12.6465 3.36784 12.9062 3.14453 13.125 2.87109C13.3438 2.59766 13.5078 2.29232 13.6172 1.95508C13.3346 2.11914 13.0407 2.26042 12.7354 2.37891C12.43 2.4974 12.1133 2.58854 11.7852 2.65234C11.5299 2.37891 11.2201 2.16016 10.8555 1.99609C10.4909 1.83203 10.1035 1.75 9.69336 1.75C9.30143 1.75 8.92773 1.82292 8.57227 1.96875C8.22591 2.1237 7.92285 2.33105 7.66309 2.59082C7.40332 2.85059 7.20052 3.15365 7.05469 3.5C6.89974 3.84635 6.82227 4.22005 6.82227 4.62109C6.82227 4.73047 6.8291 4.83984 6.84277 4.94922C6.85645 5.05859 6.8724 5.16797 6.89062 5.27734C6.29818 5.25 5.72396 5.15885 5.16797 5.00391C4.60286 4.84896 4.06966 4.6416 3.56836 4.38184C3.06706 4.12207 2.59766 3.81445 2.16016 3.45898C1.72266 3.10352 1.32617 2.70703 0.970703 2.26953C0.852214 2.47917 0.758789 2.70703 0.69043 2.95312C0.62207 3.19922 0.587891 3.45443 0.587891 3.71875C0.587891 4.21094 0.704102 4.66667 0.936523 5.08594C1.16895 5.50521 1.47656 5.84701 1.85938 6.11133C1.63151 6.10221 1.40592 6.06576 1.18262 6.00195C0.95931 5.93815 0.751953 5.85156 0.560547 5.74219C0.560547 5.7513 0.560547 5.75814 0.560547 5.7627C0.560547 5.76725 0.560547 5.77409 0.560547 5.7832C0.560547 6.47591 0.781576 7.08659 1.22363 7.61523C1.66569 8.14388 2.21484 8.47201 2.87109 8.59961C2.7526 8.63607 2.62956 8.66113 2.50195 8.6748C2.37435 8.68848 2.24219 8.69531 2.10547 8.69531C2.01432 8.69531 1.92546 8.69076 1.83887 8.68164C1.75228 8.67253 1.66341 8.66341 1.57227 8.6543C1.75456 9.2194 2.08952 9.6888 2.57715 10.0625C3.06478 10.4362 3.62305 10.6322 4.25195 10.6504C3.75977 11.0332 3.21061 11.334 2.60449 11.5527C1.99837 11.7715 1.35807 11.8809 0.683594 11.8809C0.565104 11.8809 0.448893 11.8763 0.334961 11.8672C0.221029 11.8581 0.109375 11.849 0 11.8398C0.31901 12.0404 0.651693 12.2227 0.998047 12.3867C1.3444 12.5417 1.70215 12.6738 2.07129 12.7832C2.44043 12.8926 2.82096 12.9792 3.21289 13.043C3.60482 13.0977 4.0013 13.125 4.40234 13.125C5.72396 13.125 6.89062 12.8789 7.90234 12.3867C8.92318 11.8854 9.77995 11.2428 10.4727 10.459C11.1654 9.67513 11.6895 8.80013 12.0449 7.83398C12.4004 6.85872 12.5781 5.89714 12.5781 4.94922C12.5781 4.88542 12.5758 4.82389 12.5713 4.76465C12.5667 4.7054 12.5645 4.64388 12.5645 4.58008C12.847 4.37956 13.109 4.15397 13.3506 3.90332C13.5921 3.65267 13.8086 3.38151 14 3.08984Z"
+                                        fill="white" />
+                                </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 14 14" fill="none">
+                                    <path
+                                        d="M7 1.25781C7.9388 1.25781 8.55176 1.26009 8.83887 1.26465C9.12598 1.26921 9.45638 1.2806 9.83008 1.29883C10.1673 1.31706 10.4362 1.35124 10.6367 1.40137C10.8372 1.4515 11.0013 1.49935 11.1289 1.54492C11.293 1.60872 11.4365 1.68164 11.5596 1.76367C11.6826 1.8457 11.8079 1.94596 11.9355 2.06445C12.054 2.18294 12.1543 2.30599 12.2363 2.43359C12.3184 2.5612 12.3913 2.70703 12.4551 2.87109C12.5007 2.98958 12.5485 3.14909 12.5986 3.34961C12.6488 3.55013 12.6829 3.82357 12.7012 4.16992C12.7103 4.5345 12.7194 4.86263 12.7285 5.1543C12.7376 5.44596 12.7422 6.0612 12.7422 7C12.7422 7.92969 12.7376 8.54036 12.7285 8.83203C12.7194 9.1237 12.7103 9.45182 12.7012 9.81641C12.6829 10.1628 12.6488 10.4362 12.5986 10.6367C12.5485 10.8372 12.5007 10.9967 12.4551 11.1152C12.3913 11.2793 12.3184 11.4251 12.2363 11.5527C12.1543 11.6803 12.054 11.8034 11.9355 11.9219C11.8079 12.0495 11.6826 12.1543 11.5596 12.2363C11.4365 12.3184 11.293 12.3913 11.1289 12.4551C11.0013 12.5007 10.8372 12.5485 10.6367 12.5986C10.4362 12.6488 10.1673 12.6784 9.83008 12.6875C9.45638 12.7057 9.12598 12.7171 8.83887 12.7217C8.55176 12.7262 7.9388 12.7285 7 12.7285C6.07031 12.7285 5.45964 12.7262 5.16797 12.7217C4.8763 12.7171 4.54362 12.7057 4.16992 12.6875C3.83268 12.6784 3.5638 12.6488 3.36328 12.5986C3.16276 12.5485 2.9987 12.5007 2.87109 12.4551C2.71615 12.3913 2.57487 12.3184 2.44727 12.2363C2.31966 12.1543 2.19661 12.0495 2.07812 11.9219C1.95052 11.8034 1.8457 11.6803 1.76367 11.5527C1.68164 11.4251 1.60872 11.2839 1.54492 11.1289C1.49935 11.0013 1.4515 10.8372 1.40137 10.6367C1.35124 10.4362 1.32161 10.1673 1.3125 9.83008C1.29427 9.45638 1.28288 9.1237 1.27832 8.83203C1.27376 8.54036 1.27148 7.92969 1.27148 7C1.27148 6.0612 1.27376 5.44596 1.27832 5.1543C1.28288 4.86263 1.29427 4.5345 1.3125 4.16992C1.32161 3.83268 1.35124 3.5638 1.40137 3.36328C1.4515 3.16276 1.49935 2.9987 1.54492 2.87109C1.60872 2.70703 1.68164 2.56348 1.76367 2.44043C1.8457 2.31738 1.94596 2.19206 2.06445 2.06445C2.19206 1.94596 2.31738 1.8457 2.44043 1.76367C2.56348 1.68164 2.70703 1.60872 2.87109 1.54492C2.9987 1.49935 3.16276 1.4515 3.36328 1.40137C3.5638 1.35124 3.83268 1.31706 4.16992 1.29883C4.54362 1.2806 4.87402 1.26921 5.16113 1.26465C5.44824 1.26009 6.0612 1.25781 7 1.25781ZM7 0C6.05208 0 5.42773 0.00227833 5.12695 0.00683594C4.82617 0.0113935 4.48893 0.0227861 4.11523 0.0410156C3.74154 0.0592451 3.42025 0.0957031 3.15137 0.150391C2.88249 0.205078 2.63867 0.277995 2.41992 0.369141C2.18294 0.460286 1.96419 0.569661 1.76367 0.697266C1.56315 0.82487 1.36719 0.984375 1.17578 1.17578C0.984375 1.36719 0.82487 1.56315 0.697266 1.76367C0.569661 1.96419 0.460286 2.18294 0.369141 2.41992C0.277995 2.63867 0.205078 2.88249 0.150391 3.15137C0.0957031 3.42025 0.0592448 3.74154 0.0410156 4.11523C0.0227865 4.48893 0.0113932 4.82617 0.00683594 5.12695C0.00227865 5.42773 0 6.05208 0 7C0 7.94792 0.00227865 8.57227 0.00683594 8.87305C0.0113932 9.17383 0.0227865 9.51107 0.0410156 9.88477C0.0592448 10.2585 0.0957031 10.5798 0.150391 10.8486C0.205078 11.1175 0.277995 11.3613 0.369141 11.5801C0.460286 11.8171 0.569661 12.0358 0.697266 12.2363C0.82487 12.4368 0.984375 12.6328 1.17578 12.8242C1.36719 13.0156 1.56315 13.1751 1.76367 13.3027C1.96419 13.4303 2.18294 13.5397 2.41992 13.6309C2.63867 13.7129 2.88249 13.7835 3.15137 13.8428C3.42025 13.902 3.74154 13.9408 4.11523 13.959C4.48893 13.9772 4.82617 13.9886 5.12695 13.9932C5.42773 13.9977 6.05208 14 7 14C7.94792 14 8.57227 13.9977 8.87305 13.9932C9.17383 13.9886 9.51107 13.9772 9.88477 13.959C10.2585 13.9408 10.5798 13.902 10.8486 13.8428C11.1175 13.7835 11.3613 13.7129 11.5801 13.6309C11.8079 13.5397 12.0221 13.4303 12.2227 13.3027C12.4232 13.1751 12.6237 13.0156 12.8242 12.8242C13.0156 12.6328 13.1751 12.4368 13.3027 12.2363C13.4303 12.0358 13.5397 11.8171 13.6309 11.5801C13.7129 11.3613 13.7835 11.1175 13.8428 10.8486C13.902 10.5798 13.9362 10.2585 13.9453 9.88477C13.9635 9.51107 13.9749 9.17383 13.9795 8.87305C13.984 8.57227 13.9863 7.94792 13.9863 7C13.9863 6.05208 13.984 5.42773 13.9795 5.12695C13.9749 4.82617 13.9635 4.48893 13.9453 4.11523C13.9362 3.74154 13.902 3.42025 13.8428 3.15137C13.7835 2.88249 13.7129 2.63867 13.6309 2.41992C13.5397 2.19206 13.4303 1.97559 13.3027 1.77051C13.1751 1.56543 13.0156 1.36719 12.8242 1.17578C12.6328 0.984375 12.4368 0.82487 12.2363 0.697266C12.0358 0.569661 11.8171 0.460286 11.5801 0.369141C11.3613 0.287109 11.1175 0.216472 10.8486 0.157227C10.5798 0.0979815 10.2585 0.0592451 9.88477 0.0410156C9.51107 0.0227861 9.17383 0.0113935 8.87305 0.00683594C8.57227 0.00227833 7.94792 0 7 0ZM7 3.4043C6.50781 3.4043 6.04297 3.5 5.60547 3.69141C5.16797 3.8737 4.78516 4.12891 4.45703 4.45703C4.12891 4.78516 3.8737 5.16797 3.69141 5.60547C3.5 6.04297 3.4043 6.50781 3.4043 7C3.4043 7.49219 3.5 7.95703 3.69141 8.39453C3.8737 8.83203 4.12891 9.21484 4.45703 9.54297C4.78516 9.87109 5.16797 10.1263 5.60547 10.3086C6.04297 10.5 6.50781 10.5957 7 10.5957C7.49219 10.5957 7.95703 10.5 8.39453 10.3086C8.83203 10.1263 9.21484 9.87109 9.54297 9.54297C9.87109 9.21484 10.1263 8.83203 10.3086 8.39453C10.5 7.95703 10.5957 7.49219 10.5957 7C10.5957 6.50781 10.5 6.04297 10.3086 5.60547C10.1263 5.16797 9.87109 4.78516 9.54297 4.45703C9.21484 4.12891 8.83203 3.8737 8.39453 3.69141C7.95703 3.5 7.49219 3.4043 7 3.4043ZM7 9.33789C6.35286 9.33789 5.80143 9.11003 5.3457 8.6543C4.88997 8.19857 4.66211 7.64714 4.66211 7C4.66211 6.35286 4.88997 5.80143 5.3457 5.3457C5.80143 4.88997 6.35286 4.66211 7 4.66211C7.64714 4.66211 8.19857 4.88997 8.6543 5.3457C9.11003 5.80143 9.33789 6.35286 9.33789 7C9.33789 7.64714 9.11003 8.19857 8.6543 8.6543C8.19857 9.11003 7.64714 9.33789 7 9.33789ZM11.5801 3.26758C11.5801 3.49544 11.498 3.69141 11.334 3.85547C11.1699 4.01953 10.9694 4.10156 10.7324 4.10156C10.5046 4.10156 10.3086 4.01953 10.1445 3.85547C9.98047 3.69141 9.89844 3.49544 9.89844 3.26758C9.89844 3.0306 9.98047 2.83008 10.1445 2.66602C10.3086 2.50195 10.5046 2.41992 10.7324 2.41992C10.9694 2.41992 11.1699 2.50195 11.334 2.66602C11.498 2.83008 11.5801 3.0306 11.5801 3.26758Z"
+                                        fill="white" />
+                                </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 14 14" fill="none">
+                                    <path
+                                        d="M1.85938 10.2676C1.34896 10.2676 0.911458 10.4499 0.546875 10.8145C0.182292 11.179 0 11.6165 0 12.127C0 12.6374 0.182292 13.0749 0.546875 13.4395C0.911458 13.804 1.34896 13.9863 1.85938 13.9863C2.37891 13.9863 2.82096 13.804 3.18555 13.4395C3.55013 13.0749 3.73242 12.6374 3.73242 12.127C3.73242 11.6165 3.55013 11.179 3.18555 10.8145C2.82096 10.4499 2.37891 10.2676 1.85938 10.2676ZM0 4.75781V7.4375C0.4375 7.4375 0.865885 7.47852 1.28516 7.56055C1.70443 7.65169 2.11003 7.77702 2.50195 7.93652C2.89388 8.09603 3.27214 8.29883 3.63672 8.54492C3.99219 8.7819 4.32487 9.05534 4.63477 9.36523C4.94466 9.67513 5.2181 10.0078 5.45508 10.3633C5.69206 10.7188 5.8903 11.0924 6.0498 11.4844C6.20931 11.8763 6.33464 12.2865 6.42578 12.7148C6.50781 13.1341 6.54883 13.5625 6.54883 14H9.24219C9.24219 12.724 9.00065 11.5254 8.51758 10.4043C8.0345 9.2832 7.3737 8.30339 6.53516 7.46484C5.69661 6.6263 4.7168 5.9655 3.5957 5.48242C2.47461 4.99935 1.27604 4.75781 0 4.75781ZM0 0V2.67969C1.55859 2.67969 3.02604 2.98047 4.40234 3.58203C5.76953 4.17448 6.96582 4.98112 7.99121 6.00195C9.0166 7.02279 9.82552 8.22135 10.418 9.59766C11.0104 10.974 11.3066 12.4414 11.3066 14H14C14 12.0677 13.6309 10.2539 12.8926 8.55859C12.1634 6.85417 11.1654 5.36849 9.89844 4.10156C8.63151 2.83464 7.14583 1.83659 5.44141 1.10742C3.74609 0.369141 1.93229 0 0 0Z"
+                                        fill="white" />
+                                </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 14 14" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.94488 2.49707C5.16988 2.49707 3.25456 2.6019 1.94284 2.69139C0.998233 2.75583 0.244784 3.4899 0.161733 4.43305C0.080903 5.35098 0.000131907 6.49106 1.6197e-07 7.38279C-0.000135228 8.29919 0.0846318 9.47704 0.16746 10.4089C0.248789 11.324 0.962081 12.046 1.87547 12.144C3.31713 12.2987 5.47355 12.4971 7.05512 12.4971C8.71378 12.4971 10.9145 12.2789 12.2851 12.1217C13.0664 12.0321 13.6988 11.4743 13.8035 10.6948C13.9048 9.9408 14 8.84336 14 7.38279C14 6.19928 13.9005 5.10225 13.7968 4.28018C13.6865 3.40624 12.9661 2.76225 12.0873 2.70106C10.7744 2.60964 8.78431 2.49707 6.94488 2.49707ZM5.84252 9.5454L9.14961 7.55454L5.84252 5.56368V9.5454Z"
+                                        fill="white" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer-right">
+                    <div class="footer-buttons">
+                        <button class="footer-btn">お問い合わせ</button>
+                        <button class="footer-btn">無料カタログ請求</button>
+                        <button class="footer-btn">ご予約手続き</button>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-col">
+                            <a href="#" class="footer-link">ホーム</a>
+                            <a href="#" class="footer-link">利用ガイド</a>
+                            <a href="#" class="footer-link">料金プラン</a>
+                        </div>
+                        <div class="footer-col">
+                            <a href="#" class="footer-link">新情報</a>
+                            <a href="#" class="footer-link">ブログ</a>
+                            <a href="#" class="footer-link">よくあるご質問</a>
+                        </div>
+                        <!-- <div class="footer-col">
+                    
+                </div>
+                <div class="footer-col">
+                    
+                </div> -->
+                    </div>
+
+                </div>
             </div>
 
             <!-- Center Section: Buttons -->
-            
+
 
             <!-- Right Section: Links -->
-            
+
         </div>
 
         <!-- Bottom Section -->
@@ -879,5 +985,83 @@
 
 
     <script src="index.js"></script>
-    </body>
-    </html>
+    <script>
+        // const pricingSlider = new Swiper(".pricing-slider", {
+        //     slidesPerView: 1,
+        //     spaceBetween: 20,
+        //     loop: true,
+
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //     },
+
+        //     breakpoints: {
+        //         990: {
+        //             slidesPerView: 3,
+        //             spaceBetween: 40,
+        //             loop: false,
+        //         },
+        //     },
+        // });
+
+    </script>
+
+    <script>
+        // const workflowSwiper = new Swiper('.slider-container', {
+
+        //     loop: true,
+        //     speed: 600,
+
+        //     autoplay: {
+        //         delay: 2500,
+        //         disableOnInteraction: true,
+        //     },
+
+        //     slidesPerView: 1,
+        //     spaceBetween: 20,
+
+        //     centeredSlides: false,
+        //     allowTouchMove: true,
+
+        //     pagination: false,
+        //     navigation: false,
+
+        //     breakpoints: {
+
+        //         0: {
+        //             slidesPerView: 1,
+        //             spaceBetween: 0,
+        //         },
+
+        //         768: {
+        //             slidesPerView: 2,
+        //             spaceBetween: 30,
+        //         },
+
+        //         1024: {
+        //             slidesPerView: 5,
+        //             spaceBetween: 40,
+        //         },
+
+        //     }
+
+        // });
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
