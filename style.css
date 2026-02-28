@@ -2457,7 +2457,7 @@ footer {
     width: 374px;
   }
   .grid-wrapper {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 350px);
     gap: 0px;
   }
   .vimgg {
@@ -2467,7 +2467,7 @@ footer {
     display: none;
   }
   .lady-image {
-    top: 0;
+    top: 22px;
   }
   .main-new p {
     padding: 6px 20px;
@@ -2501,5 +2501,34 @@ footer {
   }
   .img-text-heading-main h1 {
     font-size: 17px;
+  }
+  .lady-image img {
+    height: 250px !important;
+    width: 280px !important;
+  }
+  .main-table-section .img-text-heading {
+    font-size: 28px !important;
+  }
+  .inner-card img {
+    width: 350px;
+  }
+  .factory-inner-content {
+    width: 350px;
+  }
+  .content-first-div h1 {
+    font-size: 20px;
+  }
+  .content-second-div {
+    gap: 15px;
+  }
+  .filled-check {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .full-img-card .img-text-heading-main {
+    gap: 20px;
+  }
+  .full-img-card .img-text-heading-main span {
+    font-size: 50px;
   }
 }
