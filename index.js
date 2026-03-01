@@ -1,31 +1,31 @@
-const track = document.querySelector(".slider-track");
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
+// const track = document.querySelector(".slider-track");
+// const slides = document.querySelectorAll(".slide");
+// const dots = document.querySelectorAll(".dot");
 
-let currentIndex = 0;
+// let currentIndex = 0;
 
-function showSlide(index) {
-  track.style.transform = `translateX(-${index * 100}%)`;
+// function showSlide(index) {
+//   track.style.transform = `translateX(-${index * 100}%)`;
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === index);
-  });
+//   dots.forEach((dot, i) => {
+//     dot.classList.toggle("active", i === index);
+//   });
 
-  currentIndex = index;
-}
+//   currentIndex = index;
+// }
 
-// Auto slide
-setInterval(() => {
-  let next = (currentIndex + 1) % slides.length;
-  showSlide(next);
-}, 5000);
+// // Auto slide
+// setInterval(() => {
+//   let next = (currentIndex + 1) % slides.length;
+//   showSlide(next);
+// }, 5000);
 
-// Dot click
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    showSlide(Number(dot.dataset.slide));
-  });
-});
+// // Dot click
+// dots.forEach((dot) => {
+//   dot.addEventListener("click", () => {
+//     showSlide(Number(dot.dataset.slide));
+//   });
+// });
 
 // ==================header====================
 
@@ -180,28 +180,28 @@ sliderWrapper.addEventListener("mouseleave", resetAutoScroll);
 // Start auto scroll on load
 startAutoScroll();
 
-gsap.registerPlugin(SplitText);
+// gsap.registerPlugin(SplitText);
 
-let split, animation;
+// let split, animation;
 
-function setup() {
-  split && split.revert();
+// function setup() {
+//   split && split.revert();
 
-  split = new SplitText(".slide-content-mbl", {
-    type: "chars,words,lines",
-  });
+//   split = new SplitText(".slide-content-mbl", {
+//     type: "chars,words,lines",
+//   });
 
-  animation = gsap.from(split.chars, {
-    x: 150,
-    opacity: 0,
-    duration: 1.9,
-    ease: "power4.out",
-    stagger: 0.05,
-  });
-}
+//   animation = gsap.from(split.chars, {
+//     x: 150,
+//     opacity: 0,
+//     duration: 1.9,
+//     ease: "power4.out",
+//     stagger: 0.05,
+//   });
+// }
 
-// Run on load
-window.addEventListener("load", setup);
+// // Run on load
+// window.addEventListener("load", setup);
 
-// Recalculate on resize
-window.addEventListener("resize", setup);
+// // Recalculate on resize
+// window.addEventListener("resize", setup);
