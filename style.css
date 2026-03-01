@@ -268,21 +268,30 @@ body {
   position: relative;
   width: 100%;
   height: 1024px;
+    position: relative;
   overflow: hidden;
 }
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slider-track {
+  display: flex;
   width: 100%;
-  height: 1024px;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  height: 1024px; /* keep height or use responsive height */
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  overflow: hidden;
+  flex-shrink: 0;
+  position: relative; /* so inner absolute elements work */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+/* .slide.active {
+  transform: translateX(-100%);
+  z-index: 1;
+} */
 
 .slide.active {
   opacity: 1;
@@ -292,7 +301,7 @@ body {
 .slide-content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49.1%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
@@ -309,7 +318,7 @@ body {
 .slide-bottom-image {
   position: absolute;
   bottom: 20px;
-  display: none;
+  display: block;
   right: 0;
 }
 .main-custom-van {
@@ -428,14 +437,12 @@ body {
     font-size: 10vw;
   }
 }
-.mbl-bottom-img {
-  display: none;
-}
-@media (max-width: 760px) {
+
+@media (max-width: 768px) {
   .mbl-bottom-img {
     display: flex;
     position: absolute;
-    bottom: 140px;
+    bottom: 140px !important;
     align-items: end;
     justify-content: space-between;
     margin: auto;
@@ -456,12 +463,12 @@ body {
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0%;
-    text-align: center;
+    text-align: left !important;
     background-image: url(pictures/Vector\ 11111.png) !important;
     background-repeat: no-repeat !important;
-    background-size: 40% !important;
+    background-size:265px !important;
     margin: auto !important;
-    background-position: center !important;
+    background-position: left !important;
   }
   .mbl-custom-lady a {
     background: white;
@@ -472,7 +479,7 @@ body {
     left: 0;
     display: flex;
     align-items: anchor-center;
-    justify-content: center;
+    justify-content: start !important;
     padding: 10px;
     text-decoration: none;
     font-family: Noto Sans;
@@ -561,7 +568,11 @@ body {
     max-width: 75%;
   }
 }
-
+@media (max-width:1200px) {
+  .pangeg-img{
+    display: none !important;
+  }
+}
 @media (max-width: 1600px) {
   .pangeg-img {
     display: none;
@@ -1243,6 +1254,7 @@ h1 {
   background: white;
   max-width: 450px;
   width: 100%;
+  border-bottom: 20px solid #636F97;
 }
 .card-station-end {
   height: 85%;
@@ -1707,6 +1719,7 @@ h1 {
   position: absolute;
   right: 0;
   width: 50%;
+  height: 100%;
 }
 .slide-custom-default {
   position: unset !important;
@@ -2050,7 +2063,6 @@ footer {
   }
 
   .footer-buttons {
-    flex-direction: column;
     width: 100%;
   }
 
@@ -2176,9 +2188,7 @@ footer {
   .cards-wrapper {
     gap: 25px;
   }
-  .slide-bottom-image {
-    display: block;
-  }
+
   .main-new p {
     font-size: 22px;
   }
@@ -2249,6 +2259,9 @@ footer {
   }
   .card.parking {
     max-width: 390px;
+  }
+  .card {
+    margin: auto !important;
   }
   .card.visiting .plan-item {
     padding: 0 25px 0 25px;
@@ -2373,6 +2386,7 @@ footer {
   }
   .gallery-heading {
     max-width: 90%;
+    white-space: normal;
   }
   .mb-g-d {
     display: block;
@@ -2513,9 +2527,9 @@ footer {
   .inner-card img {
     width: 350px;
   }
-  .factory-inner-content {
+  /* .factory-inner-content {
     width: 350px;
-  }
+  } */
   .content-first-div h1 {
     font-size: 20px;
   }
@@ -2540,5 +2554,184 @@ footer {
   }
   .card.visiting .plan-price {
     font-size: 30px;
+  }
+}
+
+
+@media (max-width:1100px) {
+    .slide-bottom-image {
+    display:none;
+  }
+   .mbl-bottom-img {
+    display: flex;
+    position: fixed !important;
+    bottom: -10px !important;
+    align-items: end;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    border-bottom: 5px solid rgba(151, 202, 217, 1);
+  }
+
+
+ .mbl-custom-lady p {
+    background: rgba(151, 202, 217, 1);
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 13px 36px;
+    color: white;
+    font-family: Noto Serif JP;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    background-image: url(pictures/Vector\ 11111.png) !important;
+    background-repeat: no-repeat !important;
+    background-size:265px !important;
+    margin: auto !important;
+    background-position: center ;
+  }
+  .mbl-custom-lady a {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: anchor-center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    align-items: baseline;
+    gap: 15px;
+    color: rgba(151, 202, 217, 1);
+  }
+  .mbl-custom-lady a .hero-svg {
+    width: 30px;
+    height: 30px;
+  }
+  .slider-yuske img {
+    width: 201px;
+    z-index: 11111;
+    position: relative;
+    right: 0;
+    bottom: -4px;
+  }
+
+
+
+  
+}
+
+@media (min-width:1100px) {
+  .mbl-bottom-img {
+  display: none;
+}
+}
+
+
+@media (min-width:990px) and (max-width:1190px) {
+  .img-text-card{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.image-text-text {
+    padding: 50px 30px 50px 50px;
+}
+.img-text-heading-main span {
+    font-size: 70px;
+}
+.img-text-heading-main{
+  gap: 25px;
+}
+.img-text-heading-main h1 {
+    font-size: 24px;
+}
+.image-text-text p {
+    font-size: 18px;
+}
+.img-text-img img {
+    height: 350px;
+    width: 350px;
+}
+.reverse-card .img-text-img{
+  display: flex;
+  justify-content: end;
+}
+.reverse-card .image-text-text {
+    padding: 50px 30px 50px 50px;
+}
+
+
+}
+
+
+@media (max-width:1200px) {
+  .inner-card {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: anchor-center !important;
+    width: 500px !important;
+    margin: 60px auto !important;
+    display: flex !important;
+    max-width: 1200px !important;
+}
+.main-toy-card{
+  height: auto;
+}
+.inner-card img {
+    width: 500px !important;
+}
+.content-first-div h1 {
+    font-size: 24px;
+}
+.filled-check {
+    font-size: 20px;
+}
+.factory-inner-content {
+    padding: 15px 13px 25px;
+}
+}
+
+@media (max-width:500px) {
+  .inner-card{
+    width: auto !important;
+  }
+  .inner-card img{
+    width: 100% !important;
+  }
+}
+
+
+@media (min-width:990px) and (max-width:1200px) {
+  .main-center-img-div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    top: 26%;
+  }
+.lady-image img{
+  width: 300px;
+}
+.main-center-img-div .slide-bottom-image {
+    display: block !important;
+}
+
+
+
+}
+@media (max-width:990px) {
+  .main-center-img-div .slide-bottom-image {
+    display: block !important;
   }
 }

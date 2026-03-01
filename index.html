@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- SplitText Plugin (Demo / CodePen version) -->
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
@@ -71,7 +78,8 @@
 
 
     <!-- ===============Hero Section====================== -->
-    <div class="slider">
+  <div class="slider">
+  <div class="slider-track">
         <div class="slide active"
             style="background-image: url('pictures/3e654ea838d71c0299b89c8cbbcc2dc8e753fa19\ \(1\).png');">
             <div class="slide-content">DER CAMPING CAR</div>
@@ -179,13 +187,13 @@
                         alt=""></div>
             </div>
         </div>
+    </div>
 
         <div class="dots">
             <div class="dot active" data-slide="0"></div>
             <div class="dot" data-slide="1"></div>
             <div class="dot" data-slide="2"></div>
         </div>
-    </div>
     </div>
 
 
@@ -194,7 +202,8 @@
 
     <!-- ===============img gallery Section====================== -->
 
-    <div class="main-gallery-section">
+    <div class="main-gallery-section" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="container">
             <div class="first-gallery-main-div">
                 <img src="pictures/1.png" alt="" class="first-gallery-img" width="100%">
@@ -234,14 +243,16 @@
 
 
     <!-- ===============first image with text Section====================== -->
-    <div class="main-img-text">
+    <div class="main-img-text" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="container-img-text">
             <div class="vahical-main-heading">
                 <h1 class="img-text-heading ">ワンダーキャンピングカーレンタルの魅力</h1>
                 <h1 class="img-text-heading mbl-img-text-heading">ワンダーキャンピングカー</h1>
                 <h1 class="image-text-heading mbl-img-text-heading heading-brake">レンタルの魅力</h1>
             </div>
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>01</span>
@@ -259,7 +270,8 @@
             </div>
 
             <!-- card 2 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card reverse-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>02</span>
@@ -277,7 +289,8 @@
                 </div>
             </div>
             <!-- card 3 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>03</span>
@@ -295,7 +308,8 @@
             </div>
 
             <!-- card 4 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card reverse-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>04</span>
@@ -312,7 +326,8 @@
             </div>
 
             <!-- card 5 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>05</span>
@@ -330,7 +345,8 @@
             </div>
 
             <!-- card 6 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card reverse-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>06</span>
@@ -349,7 +365,8 @@
 
 
             <!-- card 7 -->
-            <div class="full-img-card">
+            <div class="full-img-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>07</span>
@@ -369,7 +386,8 @@
 
 
             <!-- card 8 -->
-            <div class="full-img-card ">
+            <div class="full-img-card " data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <div class="img-text-card reverse-card last-card">
                     <div class="image-text-text">
                         <div class="img-text-heading-main"><span>08</span>
@@ -392,7 +410,8 @@
 
 
     <!-- ===============toy factory Section====================== -->
-    <section class="main-vehicle-section">
+    <section class="main-vehicle-section" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="vahical-main-heading">
             <img src="pictures/Background.png" alt="">
             <h1 class="img-text-heading">ワンダーキャンピングカー 車両紹介</h1>
@@ -452,7 +471,8 @@
 
 
     <!-- ===============table Section====================== -->
-    <div class="main-table-section">
+    <div class="main-table-section" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="vahical-main-heading">
             <img src="pictures/Background.png" alt="">
             <h1 class="img-text-heading">キャンピングカー料金表</h1>
@@ -538,14 +558,16 @@
 
     <!-- ===============steps workflow Section====================== -->
 
-    <div class="vahical-main-heading steps-workflow-heading">
+    <div class="vahical-main-heading steps-workflow-heading" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <img src="pictures/Background.png" alt="">
         <h1 class="img-text-heading">レンタルまでの流れ</h1>
         <h1 class="img-text-heading mbl-img-text-heading">レンタルまでの流れ</h1>
     </div>
 
 
-    <div class="slider-container">
+    <div class="slider-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="owl-carousel workflow-slider">
             <!-- Card 1 -->
             <div class="item">
@@ -683,7 +705,8 @@
     </div>
 
     <!-- Blog Card Section -->
-    <div class="grid-top-main-column">
+    <div class="grid-top-main-column" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000"> 
         <div class="vahical-main-heading blog-card-heading">
             <img src="pictures/Background.png" alt="">
             <h1 class="img-text-heading">ワンダーキャンピングカーブログ</h1>
@@ -829,7 +852,8 @@
             </div>
         </div>
 
-        <div class="main-new-banner">
+        <div class="main-new-banner" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
             <div>
                 <img src="pictures/Rectangle 81.png" alt="" class="second-last-image">
             </div>
@@ -870,7 +894,8 @@
 
 
     <!-- ===============footer Section====================== -->
-    <footer>
+    <footer data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
         <div class="footer-wrapper">
             <!-- Left Section: Logo and Info -->
             <div class="footer-left">
@@ -1061,7 +1086,11 @@
 
 
 
-
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
