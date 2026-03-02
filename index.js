@@ -175,57 +175,92 @@ function resetAutoScroll() {
 
 
 
-const track = document.querySelector(".slider-track");
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
+// const track = document.querySelector(".slider-track");
+// const slides = document.querySelectorAll(".slide");
+// const dots = document.querySelectorAll(".dot");
 
-let currentIndex = 0;
+// let currentIndex = 0;
 
-// Split chars in every slide's text element once
-document.querySelectorAll(".slide-content-mbl, .slide-content").forEach((el) => {
-  const text = el.textContent;
-  el.innerHTML = "";
-  text.split("").forEach((char) => {
-    const span = document.createElement("span");
-    span.textContent = char === " " ? "\u00A0" : char;
-    span.style.display = "inline-block";
-    el.appendChild(span);
-  });
-});
+// // Split chars in every slide's text element once
+// document.querySelectorAll(".slide-content-mbl, .slide-content").forEach((el) => {
+//   const text = el.textContent;
+//   el.innerHTML = "";
+//   text.split("").forEach((char) => {
+//     const span = document.createElement("span");
+//     span.textContent = char === " " ? "\u00A0" : char;
+//     span.style.display = "inline-block";
+//     el.appendChild(span);
+//   });
+// });
 
-function triggerSplitAnimation(index) {
-  const activeEls = slides[index].querySelectorAll(".slide-content-mbl, .slide-content");
-  if (!activeEls.length) return;
+// function triggerSplitAnimation(index) {
+//   const activeEls = slides[index].querySelectorAll(".slide-content-mbl, .slide-content");
+//   if (!activeEls.length) return;
 
-  activeEls.forEach((el) => {
-    const spans = el.querySelectorAll("span");
-    gsap.killTweensOf(spans);
-    gsap.from(spans, {
-      x: 150,
-      opacity: 0,
-      duration:3.0,
-      ease: "power4.out",
-      stagger: 0.05,
-    });
-  });
-}
+//   activeEls.forEach((el) => {
+//     const spans = el.querySelectorAll("span");
+//     gsap.killTweensOf(spans);
+//     gsap.from(spans, {
+//       x: 150,
+//       opacity: 0,
+//       duration:3.0,
+//       ease: "power4.out",
+//       stagger: 0.05,
+//     });
+//   });
+// }
 
-function showSlide(index) {
-  track.style.transform = `translateX(-${index * 100}%)`;
-  dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
-  currentIndex = index;
-  triggerSplitAnimation(index); // fires on every slide change
-}
+// function showSlide(index) {
+//   track.style.transform = `translateX(-${index * 100}%)`;
+//   dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+//   currentIndex = index;
+//   triggerSplitAnimation(index); // fires on every slide change
+// }
 
-// Trigger on first load
-window.addEventListener("load", () => triggerSplitAnimation(0));
+// // Trigger on first load
+// window.addEventListener("load", () => triggerSplitAnimation(0));
 
-// Auto slide
-setInterval(() => {
-  showSlide((currentIndex + 1) % slides.length);
-}, 5000);
+// // Auto slide
+// setInterval(() => {
+//   showSlide((currentIndex + 1) % slides.length);
+// }, 5000);
 
-// Dot click
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => showSlide(Number(dot.dataset.slide)));
-});
+// // Dot click
+// dots.forEach((dot) => {
+//   dot.addEventListener("click", () => showSlide(Number(dot.dataset.slide)));
+// });
+
+// function fillMarquee() {
+//   const track = document.getElementById('marqueeTrack');
+//   if (!track) return;
+
+//   const text = 'WONDER CAMPING CAR';
+
+//   const temp = document.createElement('span');
+//   temp.className = 'slide-content';
+//   document.body.appendChild(temp);
+//   const itemWidth = temp.offsetWidth;
+//   document.body.removeChild(temp);
+
+//   if (!itemWidth) return;
+
+//   // Cap copies to a safe maximum
+//   const copies = Math.min(Math.ceil((window.innerWidth * 2) / itemWidth) + 2, 50);
+
+//   track.innerHTML = '';
+//   for (let i = 0; i < copies; i++) {
+//     const span = document.createElement('span');
+//     span.className = 'slide-content';
+//     span.textContent = text;
+//     track.appendChild(span);
+//   }
+// }
+
+// let resizeTimer;
+// function onResize() {
+//   clearTimeout(resizeTimer);
+//   resizeTimer = setTimeout(fillMarquee, 150); // debounce 150ms
+// }
+
+// fillMarquee();
+// window.addEventListener('resize', onResize);
