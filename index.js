@@ -173,35 +173,59 @@ function resetAutoScroll() {
   startAutoScroll();
 }
 
-// Add mouse events to pause on hover
-sliderWrapper.addEventListener("mouseenter", stopAutoScroll);
-sliderWrapper.addEventListener("mouseleave", resetAutoScroll);
 
-// Start auto scroll on load
-startAutoScroll();
 
-// gsap.registerPlugin(SplitText);
+const track = document.querySelector(".slider-track");
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
 
-// let split, animation;
+let currentIndex = 0;
 
-// function setup() {
-//   split && split.revert();
+// Split chars in every slide's text element once
+document.querySelectorAll(".slide-content-mbl, .slide-content").forEach((el) => {
+  const text = el.textContent;
+  el.innerHTML = "";
+  text.split("").forEach((char) => {
+    const span = document.createElement("span");
+    span.textContent = char === " " ? "\u00A0" : char;
+    span.style.display = "inline-block";
+    el.appendChild(span);
+  });
+});
 
-//   split = new SplitText(".slide-content-mbl", {
-//     type: "chars,words,lines",
-//   });
+function triggerSplitAnimation(index) {
+  const activeEls = slides[index].querySelectorAll(".slide-content-mbl, .slide-content");
+  if (!activeEls.length) return;
 
-//   animation = gsap.from(split.chars, {
-//     x: 150,
-//     opacity: 0,
-//     duration: 1.9,
-//     ease: "power4.out",
-//     stagger: 0.05,
-//   });
-// }
+  activeEls.forEach((el) => {
+    const spans = el.querySelectorAll("span");
+    gsap.killTweensOf(spans);
+    gsap.from(spans, {
+      x: 150,
+      opacity: 0,
+      duration:3.0,
+      ease: "power4.out",
+      stagger: 0.05,
+    });
+  });
+}
 
-// // Run on load
-// window.addEventListener("load", setup);
+function showSlide(index) {
+  track.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+  currentIndex = index;
+  triggerSplitAnimation(index); // fires on every slide change
+}
 
-// // Recalculate on resize
-// window.addEventListener("resize", setup);
+// Trigger on first load
+window.addEventListener("load", () => triggerSplitAnimation(0));
+
+// Auto slide
+setInterval(() => {
+  showSlide((currentIndex + 1) % slides.length);
+}, 5000);
+
+// Dot click
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => showSlide(Number(dot.dataset.slide)));
+});
