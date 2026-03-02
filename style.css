@@ -2629,6 +2629,11 @@ footer {
   .mbl-bottom-img {
     display: none;
   }
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
 
 @media (min-width: 990px) and (max-width: 1190px) {
