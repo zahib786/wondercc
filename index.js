@@ -113,17 +113,22 @@ $(document).ready(function () {
         // margin: 200,
       },
       768: {
-        items: 2,
-        stagePadding: 200,
+        items: 3,
+        stagePadding: 0,
         margin: 350,
       },
       1200: {
-        items: 4,
+        items: 3,
         stagePadding: 0,
-        // margin: 370,
+        margin: 50,
       },
       1400: {
         items: 4,
+        margin: 300,
+      },
+      1600: {
+        items: 4,
+        margin: 100,
       },
     },
   });
@@ -172,8 +177,6 @@ function resetAutoScroll() {
   stopAutoScroll();
   startAutoScroll();
 }
-
-
 
 // const track = document.querySelector(".slider-track");
 // const slides = document.querySelectorAll(".slide");
