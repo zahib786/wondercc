@@ -434,7 +434,7 @@ body {
 }
 @media (max-width: 1900px) {
   .slide-content {
-    font-size: 10vw;
+    font-size: 7vw;
   }
 }
 
@@ -1873,7 +1873,7 @@ footer {
   padding: 120px 250px 50px;
   margin-top: 0;
   position: relative;
-  z-index: 11111;
+  z-index: 11111111111;
 }
 
 .footer-wrapper {
@@ -2082,6 +2082,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: -webkit-fill-available;
+    row-gap: 20px;
   }
 }
 
@@ -2148,7 +2149,8 @@ footer {
 
 @media (max-width: 768px) {
   .slide-content {
-    font-size: 85px;
+  font-size: 7.5vw;
+ font-weight: 600;
   }
   .mbl-custom-lady p {
     padding: 20px 36px;
@@ -2570,6 +2572,7 @@ footer {
     margin: auto;
     width: 100%;
     border-bottom: 5px solid rgba(151, 202, 217, 1);
+    z-index: 111111111111111111;
   }
 
   .mbl-custom-lady p {
@@ -2702,6 +2705,12 @@ footer {
   .inner-card img {
     width: 100% !important;
   }
+  .slide-bottom-image{
+    display:none !important;
+  }
+  .main-img-text{
+    padding: 0 11px;
+  }
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
@@ -2722,3 +2731,6 @@ footer {
     display: block !important;
   }
 }
+
+
+
