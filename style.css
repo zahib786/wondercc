@@ -2629,11 +2629,6 @@ footer {
   .mbl-bottom-img {
     display: none;
   }
-  .main-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
 }
 
 @media (min-width: 990px) and (max-width: 1190px) {
@@ -2751,5 +2746,12 @@ footer {
   }
   to {
     transform: translateX(-50%);
+  }
+}
+@media (max-width: 1100px) {
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
