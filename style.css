@@ -2094,6 +2094,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+    width:100%;
   }
   .main-footer-right .footer-buttons {
     display: none !important;
@@ -2757,5 +2758,10 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .footer-btn{
+    font-size: 12px;
   }
 }
